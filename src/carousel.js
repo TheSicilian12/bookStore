@@ -45,17 +45,17 @@ export default function Carousel() {
     }
 
     return (
-        <div>
+        <div className="flex w-screen justify-around border-solid border-2">
             <div>
                 <i className="fa fa-chevron-left fa-lg"
                     onClick={() => goBackImage()}
                 ></i>
             </div>
 
-            <div className="flex justify-center w-40 h-64">
+            <div className="flex flex-row justify-center content-center">
                 <img
                     alt="book image"
-                    className="mainCarousel-image"
+                    className="mainCarousel-image w-40 h-64"
                     src={currentImage} />
             </div>
 

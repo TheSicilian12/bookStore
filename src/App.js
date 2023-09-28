@@ -74,7 +74,9 @@ function App() {
         </div>}
       </div>
 
-      <Carousel />
+      {/* <div className="w-screen"> */}
+        <Carousel />
+      {/* </div> */}
 
     </div>
   );
