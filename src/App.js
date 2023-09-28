@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import './App.css';
 import './input.css';
 
+import Carousel from './carousel';
+
 import background from './Images/background.jpg'
 
 function App() {
@@ -28,7 +30,6 @@ function App() {
           src={background} alt="background"
         ></img>
       </div>
-
 
       <div>
         {!infoDisplay && <div className="flex mt-0.5 border-solid border-t-2 border-b-2 border-black bg-customRed">
@@ -72,6 +73,9 @@ function App() {
           </div>
         </div>}
       </div>
+
+      <Carousel />
+
     </div>
   );
 }
