@@ -24,6 +24,6 @@ code {
 
 @layer components {
   .text-overlay {
-    @apply fixed flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto;
+    @apply absolute flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto;
   }
 }
