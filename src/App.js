@@ -24,9 +24,7 @@ function App() {
         <i className="fa fa-angle-up"
           onClick={() => setInfoDisplay(false)}></i>
 
-      {infoDisplay && <div>test</div>}
-
-        <div className="flex justify-around mt-0.5 border-solid border-t-2 border-b-2 border-black">
+        {infoDisplay && <div className="flex justify-around mt-0.5 border-solid border-t-2 border-b-2 border-black">
           <div>
             <div>
               <div className="font-bold text-4xl">Hours</div>
@@ -50,7 +48,7 @@ function App() {
               <div>(567) 204-2718</div>
             </div>
           </div>
-        </div>
+        </div>}
 
 
       </div>
