@@ -77,8 +77,35 @@ function App() {
       <div className="flex justify-center text-7xl mb-10 mt-10">
         Weekly Highlights!
       </div>
-        <Carousel />
+      <Carousel />
 
+
+
+      <div className="flex justify-around border-solid border-t-2 border-b-2 border-black mt-10">
+          <div>
+            <div>
+              <div className="font-bold text-4xl">Hours</div>
+              <div>Monday & Tuesday: 11 AM - 5 PM</div>
+              <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+              <div> Saturday: 10 AM - 3:30 PM</div>
+              <div>Sunday: Closed</div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div className="font-bold text-4xl">Location</div>
+              <div>309 N Cole St Lima, OH 45805</div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div className="font-bold text-4xl">Contact</div>
+              <div>(567) 204-2718</div>
+            </div>
+          </div>
+      </div>
 
     </div>
   );
