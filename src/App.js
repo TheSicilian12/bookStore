@@ -41,17 +41,29 @@ function App() {
           </div>
         </div>
 
-        {/* <ImageGallery items={images} /> */}
+        <div>
+          Hours
+          <div>Monday: 11 AM - 5 PM</div>
+          <div>Tuesday: 11 AM - 5 PM</div>
+          <div>Wednesday: 11 AM - 3:30 PM</div>
+          <div>Thursday: 11 AM - 3:30 PM</div>
+          <div>Friday: 11 AM - 3:30 PM</div>
+          <div> Saturday: 10 AM - 3:30 PM</div>
+          <div>Sunday: Closed</div>
+        </div>
+
+        <div>
+          Location
+          <div>309 N Cole St Lima, OH 45805</div>
+        </div>
+
+        <div>
+          Contact
+          <div>(567) 204-2718</div>
+        </div>
+
+
       </div>
-
-
-
-
-
-
-
-
-
     </div>
   );
 }
@@ -59,3 +71,4 @@ function App() {
 export default App;
 
 // https://www.npmjs.com/package/react-image-gallery
+{/* <ImageGallery items={images} /> */}
