@@ -19,15 +19,17 @@ function App() {
       </div>
 
       <div>
-        {!infoDisplay && <div>
+        {!infoDisplay && <div className="flex mt-0.5 border-solid border-t-2 border-b-2 border-black bg-customRed">
           <i className="fa fa-angle-down"
             onClick={() => setInfoDisplay(true)}></i>
 
           </div>}
 
         {infoDisplay && <div className="flex justify-around mt-0.5 border-solid border-t-2 border-b-2 border-black">
+
           <i className="fa fa-angle-up"
             onClick={() => setInfoDisplay(false)}></i>
+
           <div>
             <div>
               <div className="font-bold text-4xl">Hours</div>
