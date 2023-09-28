@@ -67,7 +67,7 @@ export default function Carousel() {
     }
 
     return (
-        <div className="flex w-screen justify-center border-solid border-2">
+        <div className="flex w-screen justify-center">
             <div className="flex flex-col justify-center">
                 <i className="fa fa-chevron-left fa-lg text-4xl"
                     onClick={() => goBackImage()}

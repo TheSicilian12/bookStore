@@ -74,9 +74,11 @@ function App() {
         </div>}
       </div>
 
-      {/* <div className="w-screen"> */}
+      <div className="flex justify-center text-7xl mb-10 mt-10">
+        Weekly Highlights!
+      </div>
         <Carousel />
-      {/* </div> */}
+
 
     </div>
   );
