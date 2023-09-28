@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* # SCSS */
+/* @import "~react-image-gallery/styles/scss/image-gallery.scss"; */
+
+/* # CSS */
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
