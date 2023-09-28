@@ -31,32 +31,34 @@ function App() {
         </div>}
 
         {infoDisplay && <div className="flex mt-0.5 border-solid border-t-2 border-b-2 border-black">
-          <div className="">
+          <div className="w-1/6">
             <i className="fa fa-angle-up flex flex-col text-4xl"
               onClick={() => setInfoDisplay(false)}></i>
           </div>
 
-          <div>
+          <div className="flex justify-around w-5/6">
             <div>
-              <div className="font-bold text-4xl">Hours</div>
-              <div>Monday & Tuesday: 11 AM - 5 PM</div>
-              <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-              <div> Saturday: 10 AM - 3:30 PM</div>
-              <div>Sunday: Closed</div>
+              <div>
+                <div className="font-bold text-4xl">Hours</div>
+                <div>Monday & Tuesday: 11 AM - 5 PM</div>
+                <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+                <div> Saturday: 10 AM - 3:30 PM</div>
+                <div>Sunday: Closed</div>
+              </div>
             </div>
-          </div>
 
-          <div>
             <div>
-              <div className="font-bold text-4xl">Location</div>
-              <div>309 N Cole St Lima, OH 45805</div>
+              <div>
+                <div className="font-bold text-4xl">Location</div>
+                <div>309 N Cole St Lima, OH 45805</div>
+              </div>
             </div>
-          </div>
 
-          <div>
             <div>
-              <div className="font-bold text-4xl">Contact</div>
-              <div>(567) 204-2718</div>
+              <div>
+                <div className="font-bold text-4xl">Contact</div>
+                <div>(567) 204-2718</div>
+              </div>
             </div>
           </div>
         </div>}
