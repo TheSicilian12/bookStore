@@ -23,10 +23,10 @@ function App() {
   return (
     <div>
       <div className="flex flex-col text-center">
-        <div className="font-bold text-7xl">
+        <div className="font-bold text-7xl text-customOrange shadow-sm">
           Jan's
         </div>
-        <div className="font-bold text-xl">
+        <div className="font-bold text-xl text-customOrange">
           Family Book Store
         </div>
       </div>
