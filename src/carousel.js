@@ -52,10 +52,12 @@ export default function Carousel() {
                 ></i>
             </div>
 
-            <img
-                alt="book image"
-                className="mainCarousel-image"
-                src={currentImage} />
+            <div className="flex justify-center w-40 h-64">
+                <img
+                    alt="book image"
+                    className="mainCarousel-image"
+                    src={currentImage} />
+            </div>
 
 
             <div className="">
