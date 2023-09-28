@@ -45,7 +45,7 @@ function App() {
 
         <div>
           <div>
-            <div>Hours</div>
+            <div className="text-4xl">Hours</div>
             <div>Monday: 11 AM - 5 PM</div>
             <div>Tuesday: 11 AM - 5 PM</div>
             <div>Wednesday: 11 AM - 3:30 PM</div>
