@@ -25,14 +25,16 @@ function App() {
 
       <div>
         {!infoDisplay && <div className="flex mt-0.5 border-solid border-t-2 border-b-2 border-black bg-customRed">
-          <i className="fa fa-angle-down"
+          <i className="fa fa-angle-down text-4xl"
             onClick={() => setInfoDisplay(true)}></i>
 
         </div>}
 
-        {infoDisplay && <div className="flex justify-around mt-0.5 border-solid border-t-2 border-b-2 border-black">
-          <i className="fa fa-angle-up"
-            onClick={() => setInfoDisplay(false)}></i>
+        {infoDisplay && <div className="flex mt-0.5 border-solid border-t-2 border-b-2 border-black">
+          <div className="">
+            <i className="fa fa-angle-up flex flex-col text-4xl"
+              onClick={() => setInfoDisplay(false)}></i>
+          </div>
 
           <div>
             <div>
