@@ -36,16 +36,10 @@ export default function Carousel() {
         setImage3(carousel[image3Index]);
     }, [carousel, image1Index, image2Index, image3Index])
 
-    const redirectHandler = () => {
-
-    }
-
     const minusIndex = (index) => {
         let reducedIndex = index - 1;
         if (reducedIndex < 0) reducedIndex = carousel.length - 1;
-        console.log("reducedIndex: ", reducedIndex)
         return reducedIndex
-
     }
 
     const addIndex = (index) => {
@@ -67,7 +61,8 @@ export default function Carousel() {
     }
 
     return (
-        <div className="flex w-screen justify-center">
+        <div className="flex justify-center">
+
             <div className="flex flex-col justify-center">
                 <i className="fa fa-chevron-left fa-lg text-4xl"
                     onClick={() => goBackImage()}
