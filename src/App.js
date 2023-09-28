@@ -41,7 +41,7 @@ function App() {
           </div>
         </div>
 
-        <ImageGallery items={images} />
+        {/* <ImageGallery items={images} /> */}
       </div>
 
 
