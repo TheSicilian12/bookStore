@@ -31,7 +31,7 @@ function App() {
         </div>}
 
         {infoDisplay && <div className="flex mt-0.5 border-solid border-t-2 border-b-2 border-black">
-          <div className="w-1/6">
+          <div className="mr-20">
             <i className="fa fa-angle-up flex flex-col text-4xl"
               onClick={() => setInfoDisplay(false)}></i>
           </div>
