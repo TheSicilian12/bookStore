@@ -23,15 +23,13 @@ function App() {
   return (
     <div>
       <div className="flex flex-col text-center">
-        <div className="font-bold text-7xl text-customOrange">
+        <div className="font-bold text-7xl">
           Jan's
         </div>
-        <div className="font-bold text-xl text-customOrange">
+        <div className="font-bold text-xl">
           Family Book Store
         </div>
       </div>
-      <h1 class="[text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">Hello</h1>
-      <h1 class="[text-shadow:_0_1px_0_var(--tw-shadow-color)]">Hello</h1>
       <div className="flex justify-center mt-0.5">
         <div className="top-28 left-0 w-16 m-0 w-9/12">
           <div className="flex border-solid border-t-2 border-b-2 border-black">
