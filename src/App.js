@@ -20,9 +20,14 @@ function App() {
         </div>
       </div>
 
-      <img className="w-screen h-64"
-        src={background} alt="background"
-      ></img>
+      <div>
+        <div className="text-overlay text-white font-bold text-7xl w-screen h-40">
+          Your Community Book Store
+        </div>
+        <img className="w-screen h-40"
+          src={background} alt="background"
+        ></img>
+      </div>
 
 
       <div>
