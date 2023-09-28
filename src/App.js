@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
-import ImageGallery from "react-image-gallery";
+// import ImageGallery from "react-image-gallery";
+// import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 import './App.css';
 import './input.css';
 
 function App() {
   const [infoDisplay, setInfoDisplay] = useState(true);
+  // const [state, setState] = React.useState(true);
+  const helloRef = React.useRef(null);
+  const goodbyeRef = React.useRef(null);
+  const nodeRef = infoDisplay ? helloRef : goodbyeRef;
 
   return (
     <div>
@@ -23,10 +28,9 @@ function App() {
           <i className="fa fa-angle-down"
             onClick={() => setInfoDisplay(true)}></i>
 
-          </div>}
+        </div>}
 
         {infoDisplay && <div className="flex justify-around mt-0.5 border-solid border-t-2 border-b-2 border-black">
-
           <i className="fa fa-angle-up"
             onClick={() => setInfoDisplay(false)}></i>
 
@@ -64,4 +68,7 @@ function App() {
 export default App;
 
 // https://www.npmjs.com/package/react-image-gallery
-{/* <ImageGallery items={images} /> */ }
+// <ImageGallery items={images} />
+
+// https://reactcommunity.org/react-transition-group/
+// https://unpkg.com/react-transition-group@4.4.5/dist/react-transition-group.js
