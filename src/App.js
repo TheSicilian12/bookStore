@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 // import ImageGallery from "react-image-gallery";
-// import { CSSTransition, SwitchTransition } from "react-transition-group";
-
+// import { CSSTransition, SwitchTransition } from "react-transition-group"
 import './App.css';
 import './input.css';
 
+import background from './Images/background.jpg'
+
 function App() {
   const [infoDisplay, setInfoDisplay] = useState(true);
-  // const [state, setState] = React.useState(true);
-  const helloRef = React.useRef(null);
-  const goodbyeRef = React.useRef(null);
-  const nodeRef = infoDisplay ? helloRef : goodbyeRef;
 
   return (
     <div>
@@ -22,6 +19,11 @@ function App() {
           Family Book Store
         </div>
       </div>
+
+      <img className="w-screen h-64"
+        src={background} alt="background"
+      ></img>
+
 
       <div>
         {!infoDisplay && <div className="flex mt-0.5 border-solid border-t-2 border-b-2 border-black bg-customRed">
