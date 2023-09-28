@@ -28,7 +28,7 @@ export default function Carousel() {
         return () => {
             clearInterval(interval);
         }
-    }, [carousel.length])
+    }, [carousel.length, image1])
 
     useEffect(() => {
         setImage1(carousel[image1Index]);
