@@ -19,12 +19,15 @@ function App() {
       </div>
 
       <div>
-        <i className="fa fa-angle-down"
-          onClick={() => setInfoDisplay(true)}></i>
-        <i className="fa fa-angle-up"
-          onClick={() => setInfoDisplay(false)}></i>
+        {!infoDisplay && <div>
+          <i className="fa fa-angle-down"
+            onClick={() => setInfoDisplay(true)}></i>
+
+          </div>}
 
         {infoDisplay && <div className="flex justify-around mt-0.5 border-solid border-t-2 border-b-2 border-black">
+          <i className="fa fa-angle-up"
+            onClick={() => setInfoDisplay(false)}></i>
           <div>
             <div>
               <div className="font-bold text-4xl">Hours</div>
