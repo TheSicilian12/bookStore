@@ -45,12 +45,9 @@ function App() {
 
         <div>
           <div>
-            <div className="text-4xl">Hours</div>
-            <div>Monday: 11 AM - 5 PM</div>
-            <div>Tuesday: 11 AM - 5 PM</div>
-            <div>Wednesday: 11 AM - 3:30 PM</div>
-            <div>Thursday: 11 AM - 3:30 PM</div>
-            <div>Friday: 11 AM - 3:30 PM</div>
+            <div className="font-bold text-4xl">Hours</div>
+            <div>Monday & Tuesday: 11 AM - 5 PM</div>
+            <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
             <div> Saturday: 10 AM - 3:30 PM</div>
             <div>Sunday: Closed</div>
           </div>
@@ -58,14 +55,14 @@ function App() {
 
         <div>
           <div>
-            Location
+          <div className="font-bold text-4xl">Location</div>
             <div>309 N Cole St Lima, OH 45805</div>
           </div>
         </div>
 
         <div>
           <div>
-            Contact
+          <div className="font-bold text-4xl">Contact</div>
             <div>(567) 204-2718</div>
           </div>
         </div>
