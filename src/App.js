@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import ImageGallery from "react-image-gallery";
+import ImageGallery from "react-image-gallery";
 // import { CSSTransition, SwitchTransition } from "react-transition-group"
 import './App.css';
 import './input.css';
@@ -10,6 +10,21 @@ import background from './Images/background.jpg'
 
 function App() {
   const [infoDisplay, setInfoDisplay] = useState(true);
+
+  const images = [
+    {
+      original: "https://picsum.photos/id/1018/1000/600/",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1015/1000/600/",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+  ];
 
   return (
     <div className="w-screen">
@@ -74,13 +89,18 @@ function App() {
           </div>}
       </div>
 
-      <div className="flex flex-col justify-center text-7xl mb-10 mt-10">
+      {/* <div className="flex flex-col justify-center text-7xl mb-10 mt-10">
         Weekly Highlights!
-      </div>
-      <div className="w-9/12 border-solid border-2">
+      </div> */}
+
+      <div>Hello</div>
+      <div className="w-9/12">
         <Carousel />
       </div>
 
+      {/* <div className="w-9/12">
+        <ImageGallery items={images} />
+      </div> */}
 
 
 
