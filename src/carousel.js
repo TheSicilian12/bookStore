@@ -61,8 +61,9 @@ export default function Carousel() {
     }
 
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center border-solid border-2">
 
+            hello
             <div className="flex flex-col justify-center">
                 <i className="fa fa-chevron-left fa-lg text-4xl"
                     onClick={() => goBackImage()}
@@ -70,20 +71,30 @@ export default function Carousel() {
             </div>
 
             <div className="flex flex-row justify-center content-center">
-                <img
-                    alt="book image"
-                    className="mainCarousel-image w-40 h-64 mr-5 ml-5"
-                    src={image1} />
 
-                <img
+                    {/* <img
+                        alt="book image"
+                        className="mainCarousel-image w-40"
+                        src={image1} /> */}
+                <div className="w-40 border-solid border-2">
+                    <img
+                        alt="book image"
+                        className="w-auto"
+                        src={image1} />
+                </div>
+
+
+                {/* <img
                     alt="book image"
-                    className="mainCarousel-image w-40 h-64 mr-5 ml-5"
+                    // className="mainCarousel-image w-40 h-64 mr-5 ml-5"
+                    className="mainCarousel-image max-w-xs h-auto mr-5 ml-5"
                     src={image2} />
 
                 <img
                     alt="book image"
-                    className="mainCarousel-image w-40 h-64 mr-5 ml-5"
-                    src={image3} />
+                    // className="mainCarousel-image w-40 h-64 mr-5 ml-5"
+                    className="mainCarousel-image max-w-xs h-auto mr-5 ml-5"
+                    src={image3} /> */}
             </div>
 
 
