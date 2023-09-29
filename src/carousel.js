@@ -61,36 +61,42 @@ export default function Carousel() {
     }
 
     return (
-        <div className="flex justify-center w-auto mt-10">
-            <div className="flex flex-col justify-center">
-                <i className="fa fa-chevron-left fa-lg text-4xl"
-                    onClick={() => goBackImage()}
-                ></i>
+        <div className="flex flex-col justify-center w-auto">
+            <div className="w-screen text-center text-xl sm:text-5xl">
+                Weekly Highlights!
             </div>
 
-            <div className="flex flex-row justify-center content-center">
+            <div className="flex justify-center w-auto">
+                <div className="flex flex-col justify-center">
+                    <i className="fa fa-chevron-left fa-lg text-4xl"
+                        onClick={() => goBackImage()}
+                    ></i>
+                </div>
 
-                <img
-                    alt="book image"
-                    className="mainCarousel-image w-40 h-64 mr-5 ml-5"
-                    src={image1} />
+                <div className="flex flex-row justify-center content-center">
 
-                <img
-                    alt="book image"
-                    className="mainCarousel-image w-40 h-64 mr-5 ml-5"
-                    src={image2} />
+                    <img
+                        alt="book image"
+                        className="mainCarousel-image w-40 h-64 mr-5 ml-5"
+                        src={image1} />
 
-                <img
-                    alt="book image"
-                    className="mainCarousel-image w-40 h-64 mr-5 ml-5"
-                    src={image3} />
-            </div>
+                    <img
+                        alt="book image"
+                        className="mainCarousel-image w-40 h-64 mr-5 ml-5"
+                        src={image2} />
+
+                    <img
+                        alt="book image"
+                        className="mainCarousel-image w-40 h-64 mr-5 ml-5"
+                        src={image3} />
+                </div>
 
 
-            <div className="flex flex-col justify-center">
-                <i className="fa fa-chevron-right fa-lg text-4xl"
-                    onClick={() => goForwardImage()}
-                ></i>
+                <div className="flex flex-col justify-center">
+                    <i className="fa fa-chevron-right fa-lg text-4xl"
+                        onClick={() => goForwardImage()}
+                    ></i>
+                </div>
             </div>
         </div>
     )

@@ -90,9 +90,9 @@ function App() {
       </div>
 
 
-      <div className="w-screen text-center text-xl sm:text-5xl">
+      {/* <div className="w-screen text-center text-xl sm:text-5xl">
         Weekly Highlights!
-      </div>
+      </div> */}
 
       <div className="flex justify-center w-screen">
         <Carousel />
