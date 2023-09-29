@@ -6,7 +6,8 @@ module.exports = {
       customOrange: '#a3732c',
       customRed: '#8b181f',
       orange: '#FFA500',
-      white: 'rgb(255 255 255)'
+      white: 'rgb(255 255 255)',
+      footerBlack: 'rgb(0 0 0)',
     },
     extend: {},
   },
