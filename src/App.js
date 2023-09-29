@@ -88,9 +88,19 @@ function App() {
             </div>
           </div>}
       </div>
-
+          <div>Hello</div>
       <div className="flex justify-center w-screen">
         <Carousel />
+      </div>
+
+      <div className="w-9/12 border-solid border-2 overflow-x-hidden">
+        <div>
+          <div>Hours</div>
+          <div>Monday & Tuesday: 11 AM - 5 PM</div>
+          <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+          <div>Saturday: 10 AM - 3:30 PM</div>
+          <div>Sunday: Closed</div>
+        </div>
       </div>
     </div>
   );
