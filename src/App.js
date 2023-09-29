@@ -11,20 +11,20 @@ import background from './Images/background.jpg'
 function App() {
   const [infoDisplay, setInfoDisplay] = useState(true);
 
-  const images = [
-    {
-      original: "https://picsum.photos/id/1018/1000/600/",
-      thumbnail: "https://picsum.photos/id/1018/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1015/1000/600/",
-      thumbnail: "https://picsum.photos/id/1015/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1019/1000/600/",
-      thumbnail: "https://picsum.photos/id/1019/250/150/",
-    },
-  ];
+  // const images = [
+  //   {
+  //     original: "https://picsum.photos/id/1018/1000/600/",
+  //     thumbnail: "https://picsum.photos/id/1018/250/150/",
+  //   },
+  //   {
+  //     original: "https://picsum.photos/id/1015/1000/600/",
+  //     thumbnail: "https://picsum.photos/id/1015/250/150/",
+  //   },
+  //   {
+  //     original: "https://picsum.photos/id/1019/1000/600/",
+  //     thumbnail: "https://picsum.photos/id/1019/250/150/",
+  //   },
+  // ];
 
   return (
     <div className="w-screen">
@@ -47,15 +47,21 @@ function App() {
       </div>
 
       <div>
-        {!infoDisplay ?
+        {/* {!infoDisplay ? */}
+        <div className={`${!infoDisplay ? 'transition-show-info' : 'transition-hide-info'
+          }`}>
           <div className="flex mt-0.5">
             <div className="ml-10">
               <i className="fa fa-angle-down text-4xl"
                 onClick={() => setInfoDisplay(true)}></i>
             </div>
           </div>
+        </div>
 
-          : <div className="flex mt-0.5 w-screen">
+        {/* : */}
+        <div className={`${infoDisplay ? 'transition-show-info' : 'transition-hide-info'
+          }`}>
+          <div className="flex mt-0.5 w-screen">
             <div className="mr-20 ml-10">
               <i className="fa fa-angle-up flex flex-col text-4xl"
                 onClick={() => setInfoDisplay(false)}></i>
@@ -86,7 +92,14 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>}
+          </div>
+          {/* } */}
+        </div>
+      </div>
+
+      <div className={`${infoDisplay ? 'transition-show-info' : 'transition-hide-info'
+        }`}>
+        Hello
       </div>
 
       <div className="flex justify-center w-screen">
@@ -116,6 +129,8 @@ function App() {
         </div>
 
       </div>
+
+
 
     </div>
   );
