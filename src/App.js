@@ -89,20 +89,14 @@ function App() {
           </div>}
       </div>
 
-      {/* <div className="flex flex-col justify-center text-7xl mb-10 mt-10">
-        Weekly Highlights!
-      </div> */}
 
-      <div>Hello</div>
-      <div className="w-9/12">
-        <Carousel />
+      <div className="w-screen text-center text-xl sm:text-5xl">
+        Weekly Highlights!
       </div>
 
-      {/* <div className="w-9/12">
-        <ImageGallery items={images} />
-      </div> */}
-
-
+      <div className="flex justify-center w-screen">
+        <Carousel />
+      </div>
 
       {/* <div className="flex justify-around border-solid border-t-2 border-b-2 border-black mt-10">
         <div>
