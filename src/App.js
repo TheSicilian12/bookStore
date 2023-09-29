@@ -48,7 +48,7 @@ function App() {
 
       <div>
         {/* {!infoDisplay ? */}
-        <div className={`${!infoDisplay ? 'transition-show-info' : 'transition-hide-info'
+        {/* <div className={`${!infoDisplay ? 'transition-show-info' : 'transition-hide-info'
           }`}>
           <div className="flex mt-0.5">
             <div className="ml-10">
@@ -56,45 +56,51 @@ function App() {
                 onClick={() => setInfoDisplay(true)}></i>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* : */}
-        <div className={`${infoDisplay ? 'transition-show-info' : 'transition-hide-info'
-          }`}>
-          <div className="flex mt-0.5 w-screen">
-            <div className="mr-20 ml-10">
-              <i className="fa fa-angle-up flex flex-col text-4xl"
-                onClick={() => setInfoDisplay(false)}></i>
+        {/* <div className={`${infoDisplay ? 'transition-show-info' : 'transition-hide-info'
+          }`}> */}
+        <div className="flex mt-0.5 w-screen">
+
+          <div className='mr-20 ml-10 border-solid border-2'>
+            <i className={`${infoDisplay ? 'mr-20 ml-10 fa fa-angle-up flex flex-col text-4xl border-solid border-2' : 'transition-rotate-arrow mr-20 ml-10 fa fa-angle-up flex flex-col text-4xl border-solid border-2'}`}
+              onClick={() => setInfoDisplay(false)}></i>
+
+            {!infoDisplay && <i className="fa fa-angle-down text-4xl"
+                onClick={() => setInfoDisplay(true)}></i>}
+
+          </div>
+
+
+          <div className="flex justify-around w-5/6">
+            <div>
+              <div>
+                <div className="font-bold text-4xl">Hours</div>
+                <div>Monday & Tuesday: 11 AM - 5 PM</div>
+                <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+                <div> Saturday: 10 AM - 3:30 PM</div>
+                <div>Sunday: Closed</div>
+              </div>
             </div>
 
-            <div className="flex justify-around w-5/6">
+            <div>
               <div>
-                <div>
-                  <div className="font-bold text-4xl">Hours</div>
-                  <div>Monday & Tuesday: 11 AM - 5 PM</div>
-                  <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-                  <div> Saturday: 10 AM - 3:30 PM</div>
-                  <div>Sunday: Closed</div>
-                </div>
+                <div className="font-bold text-4xl">Location</div>
+                <div>309 N Cole St Lima, OH 45805</div>
               </div>
+            </div>
 
+            <div>
               <div>
-                <div>
-                  <div className="font-bold text-4xl">Location</div>
-                  <div>309 N Cole St Lima, OH 45805</div>
-                </div>
-              </div>
-
-              <div>
-                <div>
-                  <div className="font-bold text-4xl">Contact</div>
-                  <div>(567) 204-2718</div>
-                </div>
+                <div className="font-bold text-4xl">Contact</div>
+                <div>(567) 204-2718</div>
               </div>
             </div>
           </div>
-          {/* } */}
         </div>
+        {/* } */}
+        {/* </div> */}
       </div>
 
       <div className={`${infoDisplay ? 'transition-show-info' : 'transition-hide-info'

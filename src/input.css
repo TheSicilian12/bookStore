@@ -40,3 +40,33 @@ code {
   transition: max-height 2s ease-in-out;
   overflow: hidden;
 }
+
+/* .transition-rotate-arrow {
+  max-height: 0;
+  transform: rotate(0.5turn);
+  transform-origin: center;
+  perspective: 1000px;
+  transition: transform 2s ease-in-out;
+} */
+
+.transition-rotate-arrow {
+  background-color: #0CB1C4;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  /* animation-iteration-count: infinite; */
+  animation-iteration-count: inherit;
+  animation-timing-function: linear;
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(180deg);
+    }
+}
