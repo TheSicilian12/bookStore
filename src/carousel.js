@@ -62,7 +62,7 @@ export default function Carousel() {
 
     return (
         <div className="flex flex-col justify-center w-auto">
-            <div className="w-screen text-center text-5xl mb-1">
+            <div className="w-screen text-center text-5xl mb-10">
                    WEEKLY HIGHLIGHTS!
             </div>
 
