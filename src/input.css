@@ -55,3 +55,9 @@ code {
   transform: rotate(0deg);
   transition: transform 0s; /* No transition on initial render */
 }
+
+.move-up {
+  transition-timing-function: ease-out;
+  transition: 1s ease;
+  transform: translateY(130%);
+}

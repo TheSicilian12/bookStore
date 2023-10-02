@@ -11,6 +11,14 @@ import background from './Images/background.jpg'
 function App() {
   const [infoDisplay, setInfoDisplay] = useState(true);
   const [initial, setInitial] = useState(true);
+  const [rotate, setRotate] = useState("initial")
+
+  const toggleInfoDisplay = () => {
+    setInfoDisplay(!infoDisplay);
+    setInitial(false);
+    infoDisplay ? setRotate("rotate-down") : setRotate("rotate-up");
+    console.log("toggle")
+  };
 
   // const images = [
   //   {
@@ -48,34 +56,21 @@ function App() {
       </div>
 
       <div>
-        {/* {!infoDisplay ? */}
-        {/* <div className={`${!infoDisplay ? 'transition-show-info' : 'transition-hide-info'
-          }`}>
-          <div className="flex mt-0.5">
-            <div className="ml-10">
-              <i className="fa fa-angle-down text-4xl"
-                onClick={() => setInfoDisplay(true)}></i>
-            </div>
-          </div>
-        </div> */}
-
-        {/* : */}
-        {/* <div className={`${infoDisplay ? 'transition-show-info' : 'transition-hide-info'
-          }`}> */}
         <div className="flex mt-0.5 w-screen">
 
           <div className='mr-20 ml-10 border-solid border-2'>
-            <i
+            {/* <i
               className={`fa fa-angle-up text-4xl border-solid border-2 ${initial ? 'initial' : ''
                 } ${infoDisplay ? 'rotate-up' : 'rotate-down'}`}
-              onClick={() => {
-                setInfoDisplay(!infoDisplay);
-                setInitial(false);
-              }}
+              onClick={toggleInfoDisplay}
+            ></i> */}
+            <i
+              className={`${infoDisplay ? 'fa fa-angle-up' : 'fa fa-angle-down'} ${rotate} text-4xl`}
+              onClick={toggleInfoDisplay}
             ></i>
           </div>
 
-          <div className="flex justify-around w-5/6">
+          <div className={`flex justify-around w-5/6 ${initial ? 'initial' : 'move'}`}>
             <div>
               <div>
                 <div className="font-bold text-4xl">Hours</div>
