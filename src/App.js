@@ -65,14 +65,6 @@ function App() {
         <div className="flex mt-0.5 w-screen">
 
           <div className='mr-20 ml-10 border-solid border-2'>
-            {/* <i className={`${infoDisplay ?
-              initial ? 'mr-20 ml-10 fa fa-angle-up flex flex-col text-4xl border-solid border-2' : 'transition-rotate-arrow-up mr-20 ml-10 fa fa-angle-up flex flex-col text-4xl border-solid border-2'
-              : 'transition-rotate-arrow-down mr-20 ml-10 fa fa-angle-up flex flex-col text-4xl border-solid border-2'}`}
-              onClick={() => {
-                setInfoDisplay(!infoDisplay)
-                setInitial(false)
-              }}></i> */}
-
             <i
               className={`fa fa-angle-up text-4xl border-solid border-2 ${initial ? 'initial' : ''
                 } ${infoDisplay ? 'rotate-up' : 'rotate-down'}`}
@@ -81,12 +73,7 @@ function App() {
                 setInitial(false);
               }}
             ></i>
-
-            {/* {!infoDisplay && <i className="transition-rotate-arrow-up fa fa-angle-down text-4xl"
-                onClick={() => setInfoDisplay(!infoDisplay)}></i>} */}
-
           </div>
-
 
           <div className="flex justify-around w-5/6">
             <div>
