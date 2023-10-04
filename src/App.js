@@ -14,18 +14,10 @@ function App() {
   const [rotate, setRotate] = useState("rotate-down")
 
   const toggleInfoDisplay = () => {
-    console.log("infoDisplay before: ", infoDisplay)
     setInfoDisplay(!infoDisplay);
     setInitial(false);
     rotate === "rotate-down" ? setRotate("rotate-up") : setRotate("rotate-down");
-    console.log("toggle")
-    console.log("infoDisplay: ", infoDisplay)
-    console.log("rotate: ", rotate)
   };
-
-  useEffect(() => {
-    console.log("infoDisplay useEffect: ", infoDisplay)
-  }, [infoDisplay])
 
   return (
     <div className="w-screen">
@@ -51,35 +43,6 @@ function App() {
         <div className="flex mt-0.5 w-screen">
 
           <div className='mr-20 ml-10 border-solid border-2'>
-            {/* <i
-              className={`fa fa-angle-up text-4xl border-solid border-2 ${initial ? 'initial' : ''
-                } ${infoDisplay ? 'rotate-up' : 'rotate-down'}`}
-              onClick={toggleInfoDisplay}
-            ></i> */}
-            {/* <i
-              className={`${infoDisplay ? 'fa fa-angle-up' : 'fa fa-angle-down'} ${rotate} text-4xl`}
-              onClick={toggleInfoDisplay}
-            ></i> */}
-            {/* {rotate === 'initial' && <i
-              className='fa fa-angle-up text-4xl'
-              onClick={toggleInfoDisplay}
-            ></i>}
-
-            {rotate !== 'initial' && <i
-              className={`${infoDisplay ? 'fa fa-angle-up rotate-down' : 'fa fa-angle-down rotate-down'}
-
-                        text-4xl`}
-              onClick={toggleInfoDisplay}
-            ></i>} */}
-            {/* <i
-              className={`${rotate === 'initial' ? 'fa fa-angle-up' : 'fa fa-angle-up'} ${rotate} text-4xl`}
-              onClick={toggleInfoDisplay}
-            ></i> */}
-            {/* <i
-              className={`${rotate === 'initial' ? 'fa fa-angle-up bg-customOrange' : 'fa fa-angle-down'} ${rotate} text-4xl`}
-              onClick={toggleInfoDisplay}
-            ></i> */}
-
             <i
               className={`fa fa-angle-up ${rotate} text-4xl`}
               onClick={toggleInfoDisplay}
@@ -87,9 +50,7 @@ function App() {
 
           </div>
 
-
-
-          <div className={`flex justify-around w-5/6 ${initial ? 'initial' : 'move'}`}>
+          <div className={`flex justify-around w-5/6 ${rotate === "rotate-up" ? 'initial' : 'move-up'}`}>
             <div>
               <div>
                 <div className="font-bold text-4xl">Hours</div>
