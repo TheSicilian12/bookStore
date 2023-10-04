@@ -39,8 +39,8 @@ function App() {
         ></img>
       </div>
 
-      <div>
-        <div className="flex mt-0.5 w-screen">
+      <div className={`${rotate === "rotate-up" ? 'initial' : 'info-container'}`}>
+        <div className={`flex mt-0.5 w-screen ${rotate === 'rotate-up' ? 'info-container' : ''}`}>
 
           <div className='mr-20 ml-10 border-solid border-2'>
             <i
@@ -50,7 +50,7 @@ function App() {
 
           </div>
 
-          <div className={`flex justify-around w-5/6 ${rotate === "rotate-up" ? 'initial move-down' : 'move-up'}`}>
+          <div className={`flex justify-around w-5/6 bg-customOrange ${rotate === "rotate-up" ? 'initial move-down' : 'move-up'}`}>
             <div>
               <div>
                 <div className="font-bold text-4xl">Hours</div>

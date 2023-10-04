@@ -66,3 +66,9 @@ code {
   transform: translateY(0%);
   z-index: -100;
 }
+
+.info-container {
+  transition-timing-function: ease-out;
+  transition: 1s ease;
+  height: 40px;
+}
