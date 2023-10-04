@@ -55,17 +55,22 @@ function App() {
               className={`${infoDisplay ? 'fa fa-angle-up' : 'fa fa-angle-down'} ${rotate} text-4xl`}
               onClick={toggleInfoDisplay}
             ></i> */}
-            {rotate === 'initial' && <i
+            {/* {rotate === 'initial' && <i
               className='fa fa-angle-up text-4xl'
               onClick={toggleInfoDisplay}
             ></i>}
 
             {rotate !== 'initial' && <i
-              className={`${infoDisplay ? 'fa fa-angle-up rotate-up' : 'fa fa-angle-down'}
+              className={`${infoDisplay ? 'fa fa-angle-up rotate-down' : 'fa fa-angle-down rotate-down'}
 
                         text-4xl`}
               onClick={toggleInfoDisplay}
-            ></i>}
+            ></i>} */}
+            <i
+              className={`${rotate === 'initial' ? 'fa fa-angle-up' : 'fa fa-angle-down'} ${rotate} text-4xl`}
+              onClick={toggleInfoDisplay}
+            ></i>
+
           </div>
 
 
