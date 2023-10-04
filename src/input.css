@@ -56,6 +56,13 @@ code {
 .move-up {
   transition-timing-function: ease-out;
   transition: 1s ease;
-  transform: translateY(-100%);
+  transform: translateY(-110%);
+  z-index: -100;
+}
+
+.move-down {
+  transition-timing-function: ease-out;
+  transition: 1s ease;
+  transform: translateY(0%);
   z-index: -100;
 }

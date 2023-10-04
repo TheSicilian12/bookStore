@@ -11,7 +11,7 @@ import background from './Images/background.jpg'
 function App() {
   const [infoDisplay, setInfoDisplay] = useState(true);
   const [initial, setInitial] = useState(true);
-  const [rotate, setRotate] = useState("rotate-down")
+  const [rotate, setRotate] = useState("rotate-up")
 
   const toggleInfoDisplay = () => {
     setInfoDisplay(!infoDisplay);
@@ -50,7 +50,7 @@ function App() {
 
           </div>
 
-          <div className={`flex justify-around w-5/6 ${rotate === "rotate-up" ? 'initial' : 'move-up'}`}>
+          <div className={`flex justify-around w-5/6 ${rotate === "rotate-up" ? 'initial move-down' : 'move-up'}`}>
             <div>
               <div>
                 <div className="font-bold text-4xl">Hours</div>
