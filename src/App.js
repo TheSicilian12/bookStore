@@ -18,22 +18,9 @@ function App() {
     setInitial(false);
     infoDisplay ? setRotate("rotate-down") : setRotate("rotate-up");
     console.log("toggle")
+    console.log("infoDisplay: ", infoDisplay)
+    console.log("rotate: ", rotate)
   };
-
-  // const images = [
-  //   {
-  //     original: "https://picsum.photos/id/1018/1000/600/",
-  //     thumbnail: "https://picsum.photos/id/1018/250/150/",
-  //   },
-  //   {
-  //     original: "https://picsum.photos/id/1015/1000/600/",
-  //     thumbnail: "https://picsum.photos/id/1015/250/150/",
-  //   },
-  //   {
-  //     original: "https://picsum.photos/id/1019/1000/600/",
-  //     thumbnail: "https://picsum.photos/id/1019/250/150/",
-  //   },
-  // ];
 
   return (
     <div className="w-screen">
@@ -64,11 +51,24 @@ function App() {
                 } ${infoDisplay ? 'rotate-up' : 'rotate-down'}`}
               onClick={toggleInfoDisplay}
             ></i> */}
-            <i
+            {/* <i
               className={`${infoDisplay ? 'fa fa-angle-up' : 'fa fa-angle-down'} ${rotate} text-4xl`}
               onClick={toggleInfoDisplay}
-            ></i>
+            ></i> */}
+            {rotate === 'initial' && <i
+              className='fa fa-angle-up text-4xl'
+              onClick={toggleInfoDisplay}
+            ></i>}
+
+            {rotate !== 'initial' && <i
+              className={`${infoDisplay ? 'fa fa-angle-up rotate-up' : 'fa fa-angle-down'}
+
+                        text-4xl`}
+              onClick={toggleInfoDisplay}
+            ></i>}
           </div>
+
+
 
           <div className={`flex justify-around w-5/6 ${initial ? 'initial' : 'move'}`}>
             <div>
@@ -98,11 +98,6 @@ function App() {
         </div>
         {/* } */}
         {/* </div> */}
-      </div>
-
-      <div className={`${infoDisplay ? 'transition-show-info' : 'transition-hide-info'
-        }`}>
-        Hello
       </div>
 
       <div className="flex justify-center w-screen">
