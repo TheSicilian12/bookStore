@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ImageGallery from "react-image-gallery";
 // import { CSSTransition, SwitchTransition } from "react-transition-group"
 import './App.css';
@@ -11,16 +11,21 @@ import background from './Images/background.jpg'
 function App() {
   const [infoDisplay, setInfoDisplay] = useState(true);
   const [initial, setInitial] = useState(true);
-  const [rotate, setRotate] = useState("initial")
+  const [rotate, setRotate] = useState("rotate-down")
 
   const toggleInfoDisplay = () => {
+    console.log("infoDisplay before: ", infoDisplay)
     setInfoDisplay(!infoDisplay);
     setInitial(false);
-    infoDisplay ? setRotate("rotate-down") : setRotate("rotate-up");
+    rotate === "rotate-down" ? setRotate("rotate-up") : setRotate("rotate-down");
     console.log("toggle")
     console.log("infoDisplay: ", infoDisplay)
     console.log("rotate: ", rotate)
   };
+
+  useEffect(() => {
+    console.log("infoDisplay useEffect: ", infoDisplay)
+  }, [infoDisplay])
 
   return (
     <div className="w-screen">
@@ -66,8 +71,17 @@ function App() {
                         text-4xl`}
               onClick={toggleInfoDisplay}
             ></i>} */}
+            {/* <i
+              className={`${rotate === 'initial' ? 'fa fa-angle-up' : 'fa fa-angle-up'} ${rotate} text-4xl`}
+              onClick={toggleInfoDisplay}
+            ></i> */}
+            {/* <i
+              className={`${rotate === 'initial' ? 'fa fa-angle-up bg-customOrange' : 'fa fa-angle-down'} ${rotate} text-4xl`}
+              onClick={toggleInfoDisplay}
+            ></i> */}
+
             <i
-              className={`${rotate === 'initial' ? 'fa fa-angle-up' : 'fa fa-angle-down'} ${rotate} text-4xl`}
+              className={`fa fa-angle-up ${rotate} text-4xl`}
               onClick={toggleInfoDisplay}
             ></i>
 

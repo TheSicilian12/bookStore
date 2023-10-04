@@ -41,19 +41,37 @@ code {
   overflow: hidden;
 }
 
-.rotate-up {
-  transform: rotate(180deg);
+/* .rotate-up {
+  transform: rotate(-180deg);
   transition: transform 1s ease;
+  background-color: aqua;
 }
 
 .rotate-down {
   transform: rotate(0deg);
   transition: transform 1s ease;
+  background-color: blueviolet;
 }
 
 .initial {
   transform: rotate(0deg);
   transition: transform 0s; /* No transition on initial render */
+/* }
+*/
+
+.fa.fa-angle-up {
+  /* Specify transition for both rotate-up and rotate-down */
+  transition: transform 1s ease;
+}
+
+.rotate-up {
+  transform: rotate(-180deg);
+  background-color: aqua;
+}
+
+.rotate-down {
+  transform: rotate(0deg);
+  background-color: blueviolet;
 }
 
 .move-up {
