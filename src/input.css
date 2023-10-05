@@ -41,12 +41,12 @@ code {
   overflow: hidden;
 }
 
-.fa.fa-angle-down {
-  transition: transform 2s ease;
+.fa.fa-angle-up {
+  transition: transform 1s ease;
 }
 
 .rotate-up {
-  transform: rotate(-180deg);
+  transform: rotate(180deg);
 }
 
 .rotate-down {
@@ -56,18 +56,19 @@ code {
 .info-small-container {
   transition-timing-function: ease-out;
   transition: 1.5s ease;
-  transform: translateY(-140px);
-  /* position: relative;
-  z-index: -1; */
+  transform: translateY(-150px);
+  position: relative;
+  z-index: -1;
   padding-bottom: 50px;
+
 }
 
 .info-container {
   transition-timing-function: ease-out;
   transition: 2s ease;
   transform: translateY(0%);
-  /* position: relative;
-  z-index: -1; */
+  position: relative;
+  z-index: -1;
   padding-bottom: 50px;
 }
 

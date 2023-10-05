@@ -40,7 +40,7 @@ function App() {
       </div>
 
       {/* <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex`}> */}
-      <div className="flex border-solid border-2 bg-antiqueWhite">
+      <div className="flex border-solid border-2">
 
 
 
