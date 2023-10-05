@@ -40,7 +40,7 @@ function App() {
       </div>
 
       {/* <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex`}> */}
-        <div className="flex">
+      <div className="flex">
 
 
 
@@ -51,46 +51,29 @@ function App() {
           ></i>
         </div>
 
-        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} bg-antiqueWhite`}>
-          <div className="font-bold text-4xl">Hours</div>
-          <div>Monday & Tuesday: 11 AM - 5 PM</div>
-          <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-          <div> Saturday: 10 AM - 3:30 PM</div>
-          <div>Sunday: Closed</div>
-        </div>
+        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} bg-antiqueWhite w-5/6 flex justify-around`}>
+          <div>
+            <div className="font-bold text-4xl">Hours</div>
+            <div>Monday & Tuesday: 11 AM - 5 PM</div>
+            <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+            <div> Saturday: 10 AM - 3:30 PM</div>
+            <div>Sunday: Closed</div>
+          </div>
+
+          <div>
+            <div className="font-bold text-4xl">Location</div>
+            <div>309 N Cole St Lima, OH 45805</div>
+          </div>
 
 
-
-
-        {/* <div className={`flex mt-0.5 w-screen ${rotate === 'rotate-up' ? 'info-container' : ''}`}>
-          <div className={`flex justify-around w-5/6 border-solid border-2 ${rotate === "rotate-up" ? 'initial move-down' : 'move-up'}`}>
+          <div>
             <div>
-              <div>
-                <div className="font-bold text-4xl">Hours</div>
-                <div>Monday & Tuesday: 11 AM - 5 PM</div>
-                <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-                <div> Saturday: 10 AM - 3:30 PM</div>
-                <div>Sunday: Closed</div>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <div className="font-bold text-4xl">Location</div>
-                <div>309 N Cole St Lima, OH 45805</div>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <div className="font-bold text-4xl">Contact</div>
-                <div>(567) 204-2718</div>
-              </div>
+              <div className="font-bold text-4xl">Contact</div>
+              <div>(567) 204-2718</div>
             </div>
           </div>
-        </div> */}
-        {/* } */}
-        {/* </div> */}
+
+        </div>
       </div>
 
       <div className="flex justify-center w-screen">
