@@ -40,13 +40,13 @@ function App() {
       </div>
 
       {/* <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex`}> */}
-      <div className="flex">
+      <div className="flex border-solid border-2 bg-antiqueWhite">
 
 
 
         <div className='mr-20 ml-10 border-solid border-2'>
           <i
-            className={`fa fa-angle-up ${rotate} text-4xl`}
+            className={`fa fa-angle-down ${rotate} text-4xl`}
             onClick={toggleInfoDisplay}
           ></i>
         </div>
