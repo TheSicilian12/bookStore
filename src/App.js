@@ -39,8 +39,8 @@ function App() {
         ></img>
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex`}>
-        {/* <div className={`flex mt-0.5 w-screen ${rotate === 'rotate-up' ? 'info-container' : ''}`}> */}
+      {/* <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex`}> */}
+        <div className="flex">
 
         <div className='mr-20 ml-10 border-solid border-2'>
           <i
@@ -49,7 +49,7 @@ function App() {
           ></i>
         </div>
 
-        <div className={`${rotate === "rotate-down" ? 'move-up' : 'move-down'}`}>
+        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'}`}>
           <div className="font-bold text-4xl">Hours</div>
           <div>Monday & Tuesday: 11 AM - 5 PM</div>
           <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
