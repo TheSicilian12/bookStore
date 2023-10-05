@@ -49,7 +49,7 @@ function App() {
           ></i>
         </div>
 
-        <div>
+        <div className={`${rotate === "rotate-down" ? 'move-up' : 'move-down'}`}>
           <div className="font-bold text-4xl">Hours</div>
           <div>Monday & Tuesday: 11 AM - 5 PM</div>
           <div>Wednesday - Friday: 11 AM - 3:30 PM</div>

@@ -55,7 +55,7 @@ code {
 
 .move-up {
   transition-timing-function: ease-out;
-  transition: 1s ease;
+  transition: 1.5s ease;
   transform: translateY(-100px);
   position: relative;
   z-index: -1;
@@ -63,7 +63,7 @@ code {
 
 .move-down {
   transition-timing-function: ease-out;
-  transition: 1s ease;
+  transition: 2s ease;
   transform: translateY(0%);
   z-index: -100;
 }
@@ -76,8 +76,6 @@ code {
 }
 
 .info-container {
-  /* transition-timing-function: ease-out;
-  transition: 1s ease; */
   height: 150px;
   transition: height 1s ease-in;
   background-color: antiquewhite;
