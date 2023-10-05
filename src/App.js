@@ -40,7 +40,8 @@ function App() {
       </div>
 
       <div className="flex border-solid border-2">
-        <div className='border-solid border-2 w-1/12'>
+        {/* <div className='border-solid border-2 w-1/12'> */}
+        <div className={`${rotate === "rotate-down" ? 'arrow-box-small' : 'arrow-box-large'} border-solid border-2 w-1/12`}>
           <i
             className={`fa fa-angle-down ${rotate} flex justify-center text-4xl`}
             onClick={toggleInfoDisplay}
@@ -61,7 +62,6 @@ function App() {
             <div>309 N Cole St Lima, OH 45805</div>
           </div>
 
-
           <div>
             <div>
               <div className="font-bold text-4xl">Contact</div>
@@ -71,19 +71,6 @@ function App() {
 
         </div>
       </div>
-
-      {/* <div className="bg-antiqueWhite w-screen h-10 flex">
-        <div className="border-solid border-2 h-10 w-1/4">
-          <i
-            className={`fa fa-angle-down ${rotate} text-4xl mr-20 ml-10`}
-            onClick={toggleInfoDisplay}
-          ></i>
-        </div>
-
-        <div className="border-solid border-2 h-10 w-3/4">
-
-        </div>
-      </div> */}
 
       <div className="flex justify-center w-screen">
         <Carousel />
