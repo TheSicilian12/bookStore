@@ -51,7 +51,7 @@ function App() {
           ></i>
         </div>
 
-        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} bg-antiqueWhite w-5/6 flex justify-around`}>
+        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} border-solid border-2 bg-antiqueWhite w-5/6 flex justify-around`}>
           <div>
             <div className="font-bold text-4xl">Hours</div>
             <div>Monday & Tuesday: 11 AM - 5 PM</div>
