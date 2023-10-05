@@ -40,8 +40,7 @@ function App() {
       </div>
 
       <div className="flex border-solid border-2">
-        {/* <div className='border-solid border-2 w-1/12'> */}
-        <div className={`${rotate === "rotate-down" ? 'arrow-box-small' : 'arrow-box-large'} border-solid border-2 w-1/12`}>
+        <div className={`${rotate === "rotate-down" ? 'arrow-box-small' : 'arrow-box-large'} absolute border-solid border-2 w-1/12`}>
           <i
             className={`fa fa-angle-down ${rotate} flex justify-center text-4xl`}
             onClick={toggleInfoDisplay}
