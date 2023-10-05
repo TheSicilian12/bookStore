@@ -39,7 +39,7 @@ function App() {
         ></img>
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'info-small-container' : ''} flex`}>
+      <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex`}>
         {/* <div className={`flex mt-0.5 w-screen ${rotate === 'rotate-up' ? 'info-container' : ''}`}> */}
 
         <div className='mr-20 ml-10 border-solid border-2'>
