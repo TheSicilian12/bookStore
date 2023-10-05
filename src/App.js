@@ -39,18 +39,31 @@ function App() {
         ></img>
       </div>
 
-      <div className={`${rotate === "rotate-up" ? 'initial' : 'info-container'}`}>
-        <div className={`flex mt-0.5 w-screen ${rotate === 'rotate-up' ? 'info-container' : ''}`}>
+      <div className={`${rotate === "rotate-down" ? 'info-small-container' : ''} flex`}>
+        {/* <div className={`flex mt-0.5 w-screen ${rotate === 'rotate-up' ? 'info-container' : ''}`}> */}
 
-          <div className='mr-20 ml-10 border-solid border-2'>
-            <i
-              className={`fa fa-angle-up ${rotate} text-4xl`}
-              onClick={toggleInfoDisplay}
-            ></i>
+        <div className='mr-20 ml-10 border-solid border-2'>
+          <i
+            className={`fa fa-angle-up ${rotate} text-4xl`}
+            onClick={toggleInfoDisplay}
+          ></i>
+        </div>
 
-          </div>
+        <div>
+          <div className="font-bold text-4xl">Hours</div>
+          <div>Monday & Tuesday: 11 AM - 5 PM</div>
+          <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+          <div> Saturday: 10 AM - 3:30 PM</div>
+          <div>Sunday: Closed</div>
+        </div>
 
-          <div className={`flex justify-around w-5/6 bg-customOrange ${rotate === "rotate-up" ? 'initial move-down' : 'move-up'}`}>
+
+
+
+
+
+        {/* <div className={`flex mt-0.5 w-screen ${rotate === 'rotate-up' ? 'info-container' : ''}`}>
+          <div className={`flex justify-around w-5/6 border-solid border-2 ${rotate === "rotate-up" ? 'initial move-down' : 'move-up'}`}>
             <div>
               <div>
                 <div className="font-bold text-4xl">Hours</div>
@@ -75,7 +88,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* } */}
         {/* </div> */}
       </div>
