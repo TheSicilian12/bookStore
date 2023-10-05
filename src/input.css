@@ -56,14 +56,22 @@ code {
 .info-small-container {
   transition-timing-function: ease-out;
   transition: 1.5s ease;
-  transform: translateY(-100px);
+  transform: translateY(-140px);
   position: relative;
   z-index: -1;
+  padding-bottom: 50px;
 }
 
 .info-container {
   transition-timing-function: ease-out;
   transition: 2s ease;
   transform: translateY(0%);
-  z-index: -100;
+  position: relative;
+  z-index: -1;
+  padding-bottom: 50px;
+}
+
+.image-contaner {
+  position: relative;
+  z-index: 1;
 }

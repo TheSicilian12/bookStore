@@ -30,7 +30,7 @@ function App() {
         </div>
       </div>
 
-      <div>
+      <div className="image-container">
         <div className="text-overlay text-white font-bold text-7xl w-screen h-40">
           Your Community Book Store
         </div>
@@ -42,6 +42,8 @@ function App() {
       {/* <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex`}> */}
         <div className="flex">
 
+
+
         <div className='mr-20 ml-10 border-solid border-2'>
           <i
             className={`fa fa-angle-up ${rotate} text-4xl`}
@@ -49,15 +51,13 @@ function App() {
           ></i>
         </div>
 
-        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'}`}>
+        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} bg-antiqueWhite`}>
           <div className="font-bold text-4xl">Hours</div>
           <div>Monday & Tuesday: 11 AM - 5 PM</div>
           <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
           <div> Saturday: 10 AM - 3:30 PM</div>
           <div>Sunday: Closed</div>
         </div>
-
-
 
 
 
