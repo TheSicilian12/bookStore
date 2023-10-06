@@ -41,45 +41,9 @@ function App() {
       </div>
 
       {/* <div className="flex flex-col border-solid border-2 bg-antiqueWhite"> */}
-        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-around bg-antiqueWhite`}>
+      <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-around bg-antiqueWhite`}>
 
-          <div>
-            <div className="font-bold text-4xl">Hours</div>
-            <div>Monday & Tuesday: 11 AM - 5 PM</div>
-            <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-            <div> Saturday: 10 AM - 3:30 PM</div>
-            <div>Sunday: Closed</div>
-          </div>
-
-          <div>
-            <div className="font-bold text-4xl">Location</div>
-            <div>309 N Cole St Lima, OH 45805</div>
-          </div>
-
-          <div>
-            <div>
-              <div className="font-bold text-4xl">Contact</div>
-              <div>(567) 204-2718</div>
-            </div>
-          </div>
-
-
-
-      </div>
-
-      <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box w-1/12`}>
-          <i
-            className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl`}
-            onClick={toggleInfoDisplay}
-          ></i>
-        </div>
-
-      <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex justify-center w-screen`}>
-        <Carousel />
-      </div>
-
-      <div className="w-screen flex justify-around border-solid border-t-2 mt-10 bg-footerBlack">
-        <div className="text-white">
+        <div>
           <div className="font-bold text-4xl">Hours</div>
           <div>Monday & Tuesday: 11 AM - 5 PM</div>
           <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
@@ -87,20 +51,53 @@ function App() {
           <div>Sunday: Closed</div>
         </div>
 
-        <div className="text-white">
+        <div>
           <div className="font-bold text-4xl">Location</div>
           <div>309 N Cole St Lima, OH 45805</div>
         </div>
 
-        <div className="text-white" v>
-          <div className="font-bold text-4xl">Contact</div>
-          <div>(567) 204-2718</div>
+        <div>
+          <div>
+            <div className="font-bold text-4xl">Contact</div>
+            <div>(567) 204-2718</div>
+          </div>
         </div>
+
+
 
       </div>
 
+      <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box w-1/12`}>
+        <i
+          className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl`}
+          onClick={toggleInfoDisplay}
+        ></i>
+      </div>
 
+      <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex justify-center w-screen mt-4`}>
+        <Carousel />
+      </div>
 
+        <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 bg-footerBlack">
+          <div className="text-white">
+            <div className="font-bold text-4xl">Hours</div>
+            <div>Monday & Tuesday: 11 AM - 5 PM</div>
+            <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+            <div> Saturday: 10 AM - 3:30 PM</div>
+            <div>Sunday: Closed</div>
+          </div>
+
+          <div className="text-white">
+            <div className="font-bold text-4xl">Location</div>
+            <div>309 N Cole St Lima, OH 45805</div>
+          </div>
+
+          <div className="text-white" v>
+            <div className="font-bold text-4xl">Contact</div>
+            <div>(567) 204-2718</div>
+          </div>
+
+        </div>
     </div>
   );
 }
