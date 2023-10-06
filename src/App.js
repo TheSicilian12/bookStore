@@ -74,7 +74,7 @@ function App() {
           ></i>
         </div>
 
-      <div className="flex justify-center w-screen">
+      <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex justify-center w-screen`}>
         <Carousel />
       </div>
 
@@ -87,13 +87,10 @@ function App() {
           <div>Sunday: Closed</div>
         </div>
 
-
         <div className="text-white">
           <div className="font-bold text-4xl">Location</div>
           <div>309 N Cole St Lima, OH 45805</div>
         </div>
-
-
 
         <div className="text-white" v>
           <div className="font-bold text-4xl">Contact</div>

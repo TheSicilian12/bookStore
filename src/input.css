@@ -63,7 +63,7 @@ code {
   transform: translateY(-150px);
   position: relative;
   z-index: -1;
-  height: 170px;
+  height: 150px;
 }
 
 .info-container {
@@ -72,7 +72,7 @@ code {
   transform: translateY(0%);
   position: relative;
   z-index: -1;
-  height: 170px;
+  height: 160px;
 }
 
 .arrow-up {
@@ -96,4 +96,14 @@ code {
   justify-content: center;
   width: 100%;
   border-bottom: 1px solid black;
+}
+
+.general-up {
+  transition: 1.5s ease;
+  transform: translateY(-150px);
+}
+
+.general-down {
+  transition: 2s ease;
+  transform: translateY(0%);
 }
