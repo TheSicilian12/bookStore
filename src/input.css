@@ -81,7 +81,9 @@ code {
   transition-timing-function: ease-out;
   transition: 2s ease;
   height: 100px;
-  border: 1px solid black
+  border: 1px solid black;
+  position: relative;
+  z-index: 1;
 }
 
 .arrow-box-large {
@@ -89,4 +91,6 @@ code {
   transition: 2s ease;
   max-height: 400px;
   border: 1px solid black;
+  position: relative;
+  z-index: 1;
 }
