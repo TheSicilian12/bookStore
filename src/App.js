@@ -41,7 +41,7 @@ function App() {
       </div>
 
       {/* <div className="flex flex-col border-solid border-2 bg-antiqueWhite"> */}
-        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-around border-solid border-2 bg-antiqueWhite`}>
+        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-around bg-antiqueWhite`}>
 
           <div>
             <div className="font-bold text-4xl">Hours</div>
@@ -67,7 +67,7 @@ function App() {
 
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box border-solid border-2 w-1/12`}>
+      <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box w-1/12`}>
           <i
             className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl`}
             onClick={toggleInfoDisplay}

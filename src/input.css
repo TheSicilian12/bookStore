@@ -63,9 +63,7 @@ code {
   transform: translateY(-150px);
   position: relative;
   z-index: -1;
-  height: 200px;
-  padding-bottom: 50px;
-
+  height: 170px;
 }
 
 .info-container {
@@ -74,27 +72,22 @@ code {
   transform: translateY(0%);
   position: relative;
   z-index: -1;
-  height: 200px;
-  padding-bottom: 50px;
+  height: 170px;
 }
-
-/* .image-contaner {
-  position: relative;
-  z-index: 1;
-} */
 
 .arrow-up {
   transition-timing-function: ease-out;
   transition: 1.5s ease;
   transform: translateY(-150px);
-  background: blue;
+  background: antiquewhite;
 }
 
 .arrow-down {
   transition-timing-function: ease-out;
   transition: 2s ease;
   transform: translateY(0%);
-  background: blue;
+  background: antiquewhite;
+  border-bottom: 1px solid black;
 }
 
 .arrow-box {
@@ -102,4 +95,5 @@ code {
   align-items: center;
   justify-content: center;
   width: 100%;
+  border-bottom: 1px solid black;
 }
