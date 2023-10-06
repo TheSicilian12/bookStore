@@ -47,10 +47,14 @@ code {
 
 .rotate-up {
   transform: rotate(-180deg);
+  position: relative;
+  z-index: 1;
 }
 
 .rotate-down {
   transform: rotate(0deg);
+  position: relative;
+  z-index: 1;
 }
 
 .info-small-container {

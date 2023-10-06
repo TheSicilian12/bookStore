@@ -40,9 +40,10 @@ function App() {
         ></img>
       </div>
 
-      <div className="flex flex-col border-solid border-2">
+      {/* <div className="flex flex-col border-solid border-2 bg-antiqueWhite"> */}
+        <div className={`${rotate === "rotate-down" ? '' : ''} border-solid border-2 bg-antiqueWhite`}>
         {/* <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} border-solid border-2 w-11/12 bg-antiqueWhite flex justify-around`}> */}
-        <div className={`border-solid border-2 w-11/12 bg-antiqueWhite flex justify-around`}>
+        {/* <div className={`border-solid border-2 w-11/12 bg-antiqueWhite flex justify-around`}>
           <div>
             <div className="font-bold text-4xl">Hours</div>
             <div>Monday & Tuesday: 11 AM - 5 PM</div>
@@ -62,7 +63,7 @@ function App() {
               <div>(567) 204-2718</div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={`${rotate === "rotate-down" ? 'arrow-box-small' : 'arrow-box-large'} border-solid border-2 w-1/12`}>
           <i
