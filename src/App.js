@@ -65,13 +65,14 @@ function App() {
           </div>
         </div> */}
         <div>hello</div>
-        <div className="arrow-box border-solid border-2 w-1/12">
+
+      </div>
+      <div className="arrow-box border-solid border-2 w-1/12">
           <i
             className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl`}
             onClick={toggleInfoDisplay}
           ></i>
         </div>
-      </div>
 
       <div className="flex justify-center w-screen">
         <Carousel />

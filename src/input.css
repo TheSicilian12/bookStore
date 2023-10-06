@@ -72,8 +72,8 @@ code {
   transition-timing-function: ease-out;
   transition: 2s ease;
   transform: translateY(0%);
-  /* position: relative;
-  z-index: -1; */
+  position: relative;
+  z-index: -1;
   height: 400px;
   padding-bottom: 50px;
 }
