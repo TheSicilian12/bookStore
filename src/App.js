@@ -41,7 +41,7 @@ function App() {
       </div>
 
       {/* <div className="flex flex-col border-solid border-2 bg-antiqueWhite"> */}
-        <div className={`${rotate === "rotate-down" ? '' : ''} border-solid border-2 bg-antiqueWhite`}>
+        <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} border-solid border-2 bg-antiqueWhite`}>
         {/* <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} border-solid border-2 w-11/12 bg-antiqueWhite flex justify-around`}> */}
         {/* <div className={`border-solid border-2 w-11/12 bg-antiqueWhite flex justify-around`}>
           <div>
@@ -65,7 +65,7 @@ function App() {
           </div>
         </div> */}
 
-        <div className={`${rotate === "rotate-down" ? 'arrow-box-small' : 'arrow-box-large'} border-solid border-2 w-1/12`}>
+        <div className="arrow-box border-solid border-2 w-1/12">
           <i
             className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl`}
             onClick={toggleInfoDisplay}

@@ -63,6 +63,7 @@ code {
   transform: translateY(-150px);
   position: relative;
   z-index: -1;
+  height: 400px;
   padding-bottom: 50px;
 
 }
@@ -71,8 +72,9 @@ code {
   transition-timing-function: ease-out;
   transition: 2s ease;
   transform: translateY(0%);
-  position: relative;
-  z-index: -1;
+  /* position: relative;
+  z-index: -1; */
+  height: 400px;
   padding-bottom: 50px;
 }
 
@@ -81,20 +83,9 @@ code {
   z-index: 1;
 } */
 
-.arrow-box-small {
-  transition-timing-function: ease-out;
-  transition: 2s ease;
-  height: 100px;
-  border: 1px solid black;
-  position: relative;
-  z-index: 1;
-}
-
-.arrow-box-large {
-  transition-timing-function: ease-out;
-  transition: 2s ease;
-  max-height: 400px;
-  border: 1px solid black;
-  position: relative;
-  z-index: 1;
+.arrow-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
