@@ -52,6 +52,30 @@ function App() {
       original: book6,
       thumbnail: book6
     },
+    {
+      original: book1,
+      thumbnail: book1
+    },
+    {
+      original: book2,
+      thumbnail: book2
+    },
+    {
+      original: book3,
+      thumbnail: book3
+    },
+    {
+      original: book4,
+      thumbnail: book4
+    },
+    {
+      original: book5,
+      thumbnail: book5
+    },
+    {
+      original: book6,
+      thumbnail: book6
+    },
   ]
 
   return (
@@ -109,8 +133,8 @@ function App() {
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex justify-center w-screen mt-4`}>
-        <Carousel />
-        <ImageGallery items={images} />
+        {/* <Carousel /> */}
+        <ImageGallery items={images} originalHeight={'10px'}/>
       </div>
 
         <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 bg-footerBlack">
