@@ -107,3 +107,8 @@ code {
   transition: 2s ease;
   transform: translateY(0%);
 }
+
+.logo-box {
+  height: 200px;
+  width: 500px;
+}

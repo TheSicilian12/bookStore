@@ -84,12 +84,12 @@ function App() {
         {/* <div className="font-bold text-7xl">
           Jan's
         </div> */}
+        {/* <div className="font-bold text-xl">
+          Family Book Store
+        </div> */}
         <img  src={logo}
               alt={"Jan's Family Book Store"}
-              className="" />
-        <div className="font-bold text-xl">
-          Family Book Store
-        </div>
+              className="logo-box" />
       </div>
 
       <div className="image-container">
