@@ -3,13 +3,13 @@ import ImageGallery from "react-image-gallery";
 // import { CSSTransition, SwitchTransition } from "react-transition-group"
 import './App.css';
 import './input.css';
+import logo from './Images/Logo/logo.png';
 import book1 from './Images/bookCovers/book1.jpg';
 import book2 from './Images/bookCovers/book2.webp';
 import book3 from './Images/bookCovers/book3.jpg';
 import book4 from './Images/bookCovers/book4.jpg';
 import book5 from './Images/bookCovers/book5.jpg';
 import book6 from './Images/bookCovers/book6.jpg';
-
 
 import Carousel from './carousel';
 
@@ -81,9 +81,12 @@ function App() {
   return (
     <div className="w-screen">
       <div className="flex flex-col">
-        <div className="font-bold text-7xl">
+        {/* <div className="font-bold text-7xl">
           Jan's
-        </div>
+        </div> */}
+        <img  src={logo}
+              alt={"Jan's Family Book Store"}
+              className="" />
         <div className="font-bold text-xl">
           Family Book Store
         </div>
