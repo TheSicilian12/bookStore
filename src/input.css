@@ -94,6 +94,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
   width: 100%;
   border-bottom: 1px solid black;
 }
