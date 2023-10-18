@@ -4,6 +4,7 @@ import ImageGallery from "react-image-gallery";
 import './App.css';
 import './input.css';
 import logo from './Images/Logo/logo.png';
+import paperbackExchangeImage from './Images/graphics/paperbackExchange.png';
 import book1 from './Images/bookCovers/book1.jpg';
 import book2 from './Images/bookCovers/book2.webp';
 import book3 from './Images/bookCovers/book3.jpg';
@@ -80,16 +81,19 @@ function App() {
 
   return (
     <div className="w-screen">
-      <div className="flex flex-col">
+      <div className="flex justify-between mb-5">
         {/* <div className="font-bold text-7xl">
           Jan's
         </div> */}
         {/* <div className="font-bold text-xl">
           Family Book Store
         </div> */}
-        <img  src={logo}
-              alt={"Jan's Family Book Store"}
-              className="logo-box" />
+        <img src={logo}
+          alt={"Jan's Family Book Store"}
+          className="logo-box" />
+        <img src={paperbackExchangeImage}
+          alt={"Paperback Exchange"}
+          className="paperbackExchange-box" />
       </div>
 
       <div className="image-container">
@@ -138,31 +142,31 @@ function App() {
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex justify-center w-screen mt-4`}>
         {/* <Carousel /> */}
         <ImageGallery items={images}
-                      showFullscreenButton={false}
-                      // disableThumbnailScroll={true}
-                      />
+          showFullscreenButton={false}
+        // disableThumbnailScroll={true}
+        />
       </div>
 
-        <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 bg-footerBlack">
-          <div className="text-white">
-            <div className="font-bold text-4xl">Hours</div>
-            <div>Monday & Tuesday: 11 AM - 5 PM</div>
-            <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-            <div> Saturday: 10 AM - 3:30 PM</div>
-            <div>Sunday: Closed</div>
-          </div>
-
-          <div className="text-white">
-            <div className="font-bold text-4xl">Location</div>
-            <div>309 N Cole St Lima, OH 45805</div>
-          </div>
-
-          <div className="text-white" v>
-            <div className="font-bold text-4xl">Contact</div>
-            <div>(567) 204-2718</div>
-          </div>
-
+      <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 bg-footerBlack">
+        <div className="text-white">
+          <div className="font-bold text-4xl">Hours</div>
+          <div>Monday & Tuesday: 11 AM - 5 PM</div>
+          <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+          <div> Saturday: 10 AM - 3:30 PM</div>
+          <div>Sunday: Closed</div>
         </div>
+
+        <div className="text-white">
+          <div className="font-bold text-4xl">Location</div>
+          <div>309 N Cole St Lima, OH 45805</div>
+        </div>
+
+        <div className="text-white" v>
+          <div className="font-bold text-4xl">Contact</div>
+          <div>(567) 204-2718</div>
+        </div>
+
+      </div>
     </div>
   );
 }
