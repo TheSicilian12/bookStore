@@ -121,10 +121,11 @@ code {
   margin-right: 100px;
 }
 
-.community-bookstore {
-  font-family: ;
-}
-
 .backgroung-img {
   height: 300px;
+}
+
+.carousel-box {
+  border: 1px solid black;
+  
 }
