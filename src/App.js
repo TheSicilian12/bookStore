@@ -3,6 +3,13 @@ import ImageGallery from "react-image-gallery";
 // import { CSSTransition, SwitchTransition } from "react-transition-group"
 import './App.css';
 import './input.css';
+import book1 from './Images/bookCovers/book1.jpg';
+import book2 from './Images/bookCovers/book2.webp';
+import book3 from './Images/bookCovers/book3.jpg';
+import book4 from './Images/bookCovers/book4.jpg';
+import book5 from './Images/bookCovers/book5.jpg';
+import book6 from './Images/bookCovers/book6.jpg';
+
 
 import Carousel from './carousel';
 
@@ -19,6 +26,33 @@ function App() {
     setInitial(false);
     rotate === "rotate-down" ? setRotate("rotate-up") : setRotate("rotate-down");
   };
+
+  const images = [
+    {
+      original: book1,
+      thumbnail: book1
+    },
+    {
+      original: book2,
+      thumbnail: book2
+    },
+    {
+      original: book3,
+      thumbnail: book3
+    },
+    {
+      original: book4,
+      thumbnail: book4
+    },
+    {
+      original: book5,
+      thumbnail: book5
+    },
+    {
+      original: book6,
+      thumbnail: book6
+    },
+  ]
 
   return (
     <div className="w-screen">
@@ -76,6 +110,7 @@ function App() {
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex justify-center w-screen mt-4`}>
         <Carousel />
+        <ImageGallery items={images} />
       </div>
 
         <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 bg-footerBlack">
