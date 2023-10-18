@@ -14,7 +14,7 @@ import book6 from './Images/bookCovers/book6.jpg';
 
 import Carousel from './carousel';
 
-import background from './Images/background.jpg'
+import background from './Images/graphics/background.png'
 
 function App() {
   const [infoDisplay, setInfoDisplay] = useState(true);
@@ -97,10 +97,10 @@ function App() {
       </div>
 
       <div className="image-container">
-        <div className="text-overlay text-white font-bold text-7xl w-screen h-40">
+        {/* <div className="text-overlay community-bookstore text-white font-bold text-7xl w-screen h-40">
           Your Community Book Store
-        </div>
-        <img className="w-screen h-40"
+        </div> */}
+        <img className="w-screen backgroung-img"
           src={background} alt="background"
         ></img>
       </div>
