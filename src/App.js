@@ -134,7 +134,10 @@ function App() {
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex justify-center w-screen mt-4`}>
         {/* <Carousel /> */}
-        <ImageGallery items={images} originalHeight={'10px'}/>
+        <ImageGallery items={images}
+                      showFullscreenButton={false}
+                      // disableThumbnailScroll={true}
+                      />
       </div>
 
         <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 bg-footerBlack">
@@ -168,3 +171,6 @@ export default App;
 
 // https://reactcommunity.org/react-transition-group/
 // https://unpkg.com/react-transition-group@4.4.5/dist/react-transition-group.js
+
+// maybe
+// https://www.npmjs.com/package/react-multi-carousel?activeTab=readme
