@@ -6,6 +6,7 @@ import './input.css';
 import logo from './Images/Logo/logo.png';
 import paperbackExchangeImage from './Images/graphics/paperbackExchange.png';
 import carouselHeader from './Images/graphics/carouselHeader.png';
+import hoursAndLocation from './Images/graphics/hoursAndLocation.png';
 import book1 from './Images/bookCovers/book1.jpg';
 import book2 from './Images/bookCovers/book2.jpg';
 import book3 from './Images/bookCovers/book3.jpg';
@@ -157,19 +158,20 @@ function App() {
 
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box flex flex-col`}>
-        <div>Hours and Location</div>
+      <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box flex flex-col`}
+        onClick={toggleInfoDisplay}>
+        <img src={hoursAndLocation}
+          alst={'Hours and Location'} />
         <i
           className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl`}
-          onClick={toggleInfoDisplay}
         ></i>
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex flex-col justify-center items-center w-screen mt-4`}>
         {/* <Carousel /> */}
-        <img  src={carouselHeader}
-              alt={'Featured Books'}
-              className='w-1/3 mb-5 pb-5 header-carousel'/>
+        <img src={carouselHeader}
+          alt={'Featured Books'}
+          className='w-1/3 mb-5 pb-5 header-carousel' />
         <div className='carousel-box'>
           <ImageGallery items={images}
             showFullscreenButton={false}
