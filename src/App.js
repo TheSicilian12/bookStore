@@ -28,61 +28,61 @@ function App() {
     rotate === "rotate-down" ? setRotate("rotate-up") : setRotate("rotate-down");
   };
 
-  // const images = [
-  //   {
-  //     original: book1,
-  //     thumbnail: book1,
-  //     originalHeight: '100px',
-  //     thumbnailHeight: '100px'
-  //   },
-  //   {
-  //     original: book2,
-  //     thumbnail: book2,
-  //     originalHeight: '100px',
-  //     thumbnailHeight: '100px'
-  //   },
-  //   {
-  //     original: book3,
-  //     thumbnail: book3,
-  //     thumbnailHeight: '100px'
-  //   },
-  //   {
-  //     original: book4,
-  //     thumbnail: book4
-  //   },
-  //   {
-  //     original: book5,
-  //     thumbnail: book5
-  //   },
-  //   {
-  //     original: book6,
-  //     thumbnail: book6
-  //   },
-  //   {
-  //     original: book1,
-  //     thumbnail: book1
-  //   },
-  //   {
-  //     original: book2,
-  //     thumbnail: book2
-  //   },
-  //   {
-  //     original: book3,
-  //     thumbnail: book3
-  //   },
-  //   {
-  //     original: book4,
-  //     thumbnail: book4
-  //   },
-  //   {
-  //     original: book5,
-  //     thumbnail: book5
-  //   },
-  //   {
-  //     original: book6,
-  //     thumbnail: book6
-  //   },
-  // ]
+  const images = [
+    {
+      original: book1,
+      thumbnail: book1,
+      originalHeight: '100px',
+      thumbnailHeight: '100px'
+    },
+    {
+      original: book2,
+      thumbnail: book2,
+      originalHeight: '100px',
+      thumbnailHeight: '100px'
+    },
+    {
+      original: book3,
+      thumbnail: book3,
+      thumbnailHeight: '100px'
+    },
+    {
+      original: book4,
+      thumbnail: book4
+    },
+    {
+      original: book5,
+      thumbnail: book5
+    },
+    {
+      original: book6,
+      thumbnail: book6
+    },
+    {
+      original: book1,
+      thumbnail: book1
+    },
+    {
+      original: book2,
+      thumbnail: book2
+    },
+    {
+      original: book3,
+      thumbnail: book3
+    },
+    {
+      original: book4,
+      thumbnail: book4
+    },
+    {
+      original: book5,
+      thumbnail: book5
+    },
+    {
+      original: book6,
+      thumbnail: book6
+    },
+  ]
 
   return (
     <div className="w-screen">
@@ -145,8 +145,8 @@ function App() {
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex justify-center w-screen mt-4`}>
-        <Carousel />
-        {/* <div className='carousel-box'>
+        {/* <Carousel /> */}
+        <div className=''>
           <ImageGallery items={images}
             showFullscreenButton={false}
             originalHeight={'200px'}
@@ -154,8 +154,10 @@ function App() {
             thumbnailHeight={'10px'}
             showThumbnails={false}
           // disableThumbnailScroll={true}
+            showPlayButton={false}
+            autoPlay={true}
           />
-        </div> */}
+        </div>
       </div>
 
       <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 bg-footerBlack">
