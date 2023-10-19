@@ -168,12 +168,6 @@ function App() {
         <div className='carousel-box'>
           <ImageGallery items={images}
             showFullscreenButton={false}
-            // originalHeight={'200px'}
-            // originalWidth={'10px'}
-            // thumbnailHeight={'10px'}
-            // showThumbnails={false}
-            // disableThumbnailScroll={true}
-            // thumbnailWidth={'100px'}
             showPlayButton={false}
             autoPlay={true}
             swipingTransitionDuration={400}
