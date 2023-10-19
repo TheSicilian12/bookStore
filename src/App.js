@@ -156,7 +156,8 @@ function App() {
 
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box`}>
+      <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box flex flex-col`}>
+        <div>Hours and Location</div>
         <i
           className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl`}
           onClick={toggleInfoDisplay}
