@@ -6,7 +6,7 @@ import './input.css';
 import logo from './Images/Logo/logo.png';
 import paperbackExchangeImage from './Images/graphics/paperbackExchange.png';
 import book1 from './Images/bookCovers/book1.jpg';
-import book2 from './Images/bookCovers/book2.webp';
+import book2 from './Images/bookCovers/book2.jpg';
 import book3 from './Images/bookCovers/book3.jpg';
 import book4 from './Images/bookCovers/book4.jpg';
 import book5 from './Images/bookCovers/book5.jpg';
@@ -32,19 +32,21 @@ function App() {
     {
       original: book1,
       thumbnail: book1,
-      originalHeight: '100px',
-      thumbnailHeight: '100px'
+      // originalHeight: '100px',
+      // originalWidth: '100px',
+      // thumbnailHeight: '100px'
     },
     {
       original: book2,
       thumbnail: book2,
-      originalHeight: '100px',
-      thumbnailHeight: '100px'
+      // originalHeight: '100px',
+      // originalWidth: '100px',
+      // thumbnailHeight: '100px'
     },
     {
       original: book3,
       thumbnail: book3,
-      thumbnailHeight: '100px'
+      // thumbnailHeight: '100px'
     },
     {
       original: book4,
@@ -156,6 +158,8 @@ function App() {
           // disableThumbnailScroll={true}
             showPlayButton={false}
             autoPlay={true}
+            swipingTransitionDuration={400}
+            slideDuration={800}
           />
         </div>
       </div>

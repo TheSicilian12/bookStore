@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import book1 from './Images/bookCovers/book1.jpg';
-import book2 from './Images/bookCovers/book2.webp';
+import book2 from './Images/bookCovers/book2.jpg';
 import book3 from './Images/bookCovers/book3.jpg';
 import book4 from './Images/bookCovers/book4.jpg';
 import book5 from './Images/bookCovers/book5.jpg';
