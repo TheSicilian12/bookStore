@@ -32,21 +32,38 @@ function App() {
     {
       original: book1,
       thumbnail: book1,
-      // originalHeight: '100px',
-      // originalWidth: '100px',
-      // thumbnailHeight: '100px'
     },
     {
       original: book2,
       thumbnail: book2,
-      // originalHeight: '100px',
-      // originalWidth: '100px',
-      // thumbnailHeight: '100px'
     },
     {
       original: book3,
       thumbnail: book3,
-      // thumbnailHeight: '100px'
+    },
+    {
+      original: book4,
+      thumbnail: book4
+    },
+    {
+      original: book5,
+      thumbnail: book5
+    },
+    {
+      original: book6,
+      thumbnail: book6
+    },
+    {
+      original: book1,
+      thumbnail: book1
+    },
+    {
+      original: book2,
+      thumbnail: book2
+    },
+    {
+      original: book3,
+      thumbnail: book3
     },
     {
       original: book4,
@@ -148,14 +165,15 @@ function App() {
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex justify-center w-screen mt-4`}>
         {/* <Carousel /> */}
-        <div className=''>
+        <div className='carousel-box'>
           <ImageGallery items={images}
             showFullscreenButton={false}
-            originalHeight={'200px'}
-            originalWidth={'10px'}
-            thumbnailHeight={'10px'}
-            showThumbnails={false}
-          // disableThumbnailScroll={true}
+            // originalHeight={'200px'}
+            // originalWidth={'10px'}
+            // thumbnailHeight={'10px'}
+            // showThumbnails={false}
+            // disableThumbnailScroll={true}
+            // thumbnailWidth={'100px'}
             showPlayButton={false}
             autoPlay={true}
             swipingTransitionDuration={400}
