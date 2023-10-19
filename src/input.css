@@ -126,6 +126,9 @@ code {
 }
 
 .carousel-box {
-  border: 1px solid black;
   width: 50%;
+}
+
+.header-carousel {
+  border-bottom: 5px solid rgba(246,104,12,255);
 }

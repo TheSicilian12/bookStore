@@ -5,6 +5,7 @@ import './App.css';
 import './input.css';
 import logo from './Images/Logo/logo.png';
 import paperbackExchangeImage from './Images/graphics/paperbackExchange.png';
+import carouselHeader from './Images/graphics/carouselHeader.png';
 import book1 from './Images/bookCovers/book1.jpg';
 import book2 from './Images/bookCovers/book2.jpg';
 import book3 from './Images/bookCovers/book3.jpg';
@@ -164,8 +165,11 @@ function App() {
         ></i>
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex justify-center w-screen mt-4`}>
+      <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex flex-col justify-center items-center w-screen mt-4`}>
         {/* <Carousel /> */}
+        <img  src={carouselHeader}
+              alt={'Featured Books'}
+              className='w-1/3 mb-5 pb-5 header-carousel'/>
         <div className='carousel-box'>
           <ImageGallery items={images}
             showFullscreenButton={false}
