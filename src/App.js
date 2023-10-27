@@ -108,12 +108,6 @@ function App() {
   return (
     <div className="w-screen">
       <div className="flex justify-between mb-5">
-        {/* <div className="font-bold text-7xl">
-          Jan's
-        </div> */}
-        {/* <div className="font-bold text-xl">
-          Family Book Store
-        </div> */}
         <img src={logo}
           alt={"Jan's Family Book Store"}
           className="logo-box" />
@@ -123,15 +117,11 @@ function App() {
       </div>
 
       <div className="image-container">
-        {/* <div className="text-overlay community-bookstore text-white font-bold text-7xl w-screen h-40">
-          Your Community Book Store
-        </div> */}
         <img className="w-screen backgroung-img"
           src={background} alt="background"
         ></img>
       </div>
 
-      {/* <div className="flex flex-col border-solid border-2 bg-antiqueWhite"> */}
       <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-around bg-antiqueWhite`}>
 
         <div>
@@ -158,13 +148,18 @@ function App() {
 
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box flex flex-col`}
+      <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box flex`}
         onClick={toggleInfoDisplay}>
+
+        <i
+          className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl mr-5`}
+        ></i>
         <img src={hoursAndLocation}
           alst={'Hours and Location'} />
         <i
-          className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl`}
+          className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl ml-2`}
         ></i>
+
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex flex-col justify-center items-center w-screen mt-4`}>
