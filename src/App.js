@@ -170,19 +170,20 @@ function App() {
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex flex-col justify-center items-center w-screen mt-4`}>
-        {/* <Carousel /> */}
+        <Carousel />
         <img src={carouselHeader}
           alt={'Featured Books'}
           className='w-1/3 mb-5 pb-5 header-carousel' />
-        <div className='carousel-box'>
+        {/* <div className='carousel-box'>
           <ImageGallery items={images}
             showFullscreenButton={false}
             showPlayButton={false}
             autoPlay={true}
             swipingTransitionDuration={400}
             slideDuration={800}
+            showThumbnails={false}
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 footer-color">

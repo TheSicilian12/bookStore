@@ -172,7 +172,7 @@ code {
   font-size: 100px;
   /* background: #8b83837e; */
   background: rgba(255, 68, 0, 0.486);
-  border: 2px solid rgba(255, 68, 0, 0.705);
+  /* border: 2px solid rgba(255, 68, 0, 0.705); */
   border-radius: 15px;
   padding: 15px;
 }
