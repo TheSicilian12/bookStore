@@ -146,6 +146,21 @@ code {
   background-color: #8b83837e;
 }
 
+.image-container {
+  display: flex;
+}
+
+.backgroung-img {
+  display: flex;
+  z-index: 5;
+}
+
+.background-text {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+}
+
 /* Antique white  FAEBD7
   Light Coral F6828C
   Jet 333333
