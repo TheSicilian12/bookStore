@@ -159,6 +159,7 @@ function App() {
         <i
           className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl ml-2`}
         ></i>
+        {/* <FontAwesomeIcon icon="fa-solid fa-angle-down" style={{color: "#ffffff",}} /> */}
 
       </div>
 
