@@ -79,7 +79,7 @@ code {
   transition-timing-function: ease-out;
   transition: 1.5s ease;
   transform: translateY(-150px);
-  background: antiquewhite;
+  background: #faebd7;
 }
 
 .arrow-down {
