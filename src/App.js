@@ -152,12 +152,13 @@ function App() {
         onClick={toggleInfoDisplay}>
 
         <i
-          className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl mr-5`}
+          className={`fa fa-angle-down ${rotate} color-white flex justify-center text-4xl mr-5`}
         ></i>
-        <img src={hoursAndLocation}
-          alst={'Hours and Location'} />
+        {/* <img src={hoursAndLocation}
+          alst={'Hours and Location'} /> */}
+          <div className='color-white text-4xl m-2'>Hours and Location</div>
         <i
-          className={`fa fa-angle-down ${rotate} arrow-box-small flex justify-center text-4xl ml-2`}
+          className={`fa fa-angle-down ${rotate} color-white flex justify-center text-4xl ml-5`}
         ></i>
         {/* <FontAwesomeIcon icon="fa-solid fa-angle-down" style={{color: "#ffffff",}} /> */}
 
