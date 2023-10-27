@@ -16,6 +16,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background: antiquewhite;
 }
 
 code {
@@ -79,14 +80,14 @@ code {
   transition-timing-function: ease-out;
   transition: 1.5s ease;
   transform: translateY(-150px);
-  background: #faebd7;
+  background: #F6828C;
 }
 
 .arrow-down {
   transition-timing-function: ease-out;
   transition: 2s ease;
   transform: translateY(0%);
-  background: antiquewhite;
+  background: #F6828C;
   border-bottom: 1px solid black;
 }
 
@@ -132,3 +133,14 @@ code {
 .header-carousel {
   border-bottom: 5px solid rgba(246,104,12,255);
 }
+
+.footer-color {
+  background: #333333;
+}
+
+/* Antique white  FAEBD7
+  Light Coral F6828C
+  Jet 333333
+  Cornel red B3001B
+  Amethyst 7871AA
+*/

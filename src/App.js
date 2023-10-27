@@ -178,7 +178,7 @@ function App() {
         </div>
       </div>
 
-      <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 bg-footerBlack">
+      <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 footer-color">
         <div className="text-white">
           <div className="font-bold text-4xl">Hours</div>
           <div>Monday & Tuesday: 11 AM - 5 PM</div>
