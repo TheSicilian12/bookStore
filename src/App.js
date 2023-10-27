@@ -122,7 +122,7 @@ function App() {
         ></img>
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-around bg-antiqueWhite`}>
+      <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-around background-info`}>
 
         <div>
           <div className="font-bold text-4xl">Hours</div>
