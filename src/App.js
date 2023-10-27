@@ -120,7 +120,11 @@ function App() {
         <img className="w-screen backgroung-img"
           src={background} alt="background"
         ></img>
-        <div className='background-text'>Your Community Book Store</div>
+        <div className='background-text-container'>
+          <div className='background-image-text'>
+            Your Community Book Store
+          </div>
+          </div>
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-around background-info`}>

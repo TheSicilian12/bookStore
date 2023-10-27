@@ -155,10 +155,25 @@ code {
   z-index: 5;
 }
 
-.background-text {
+.background-text-container {
   display: flex;
   position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   z-index: 10;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.background-image-text {
+  display: flex;
+  color: white;
+  font-size: xx-large;
+  background: #8b83837e;
+  border: 2px solid #8b83839f;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 /* Antique white  FAEBD7
