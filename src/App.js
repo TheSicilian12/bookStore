@@ -166,8 +166,8 @@ function App() {
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex flex-col justify-center items-center w-screen mt-4`}>
-        <div className='text-4xl'>ABOUT</div>
-        <div className='about-details'>
+        <div className='text-5xl'>WHO WE ARE</div>
+        <div className='about-details text-2xl'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
