@@ -128,7 +128,7 @@ function App() {
         </div>
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-center background-info`}>
+      <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} justify-center background-info`}>
 
         <div className='w-1/4 flex justify-center'>
           <div>
