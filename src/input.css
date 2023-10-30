@@ -61,7 +61,10 @@ code {
 .info-small-container {
   transition-timing-function: ease-out;
   transition: 1.5s ease;
-  transform: translateY(-150px);
+  transform: translateY(-170px);
+  @media (max-width: 701px) {
+    transform: translateY(-385px);
+  }
   position: relative;
   z-index: -1;
   height: 150px;
@@ -79,7 +82,10 @@ code {
 .arrow-up {
   transition-timing-function: ease-out;
   transition: 1.5s ease;
-  transform: translateY(-150px);
+  transform: translateY(-170px);
+  @media (max-width: 701px) {
+    transform: translateY(-385px);
+  }
   background: #333333;
 }
 
