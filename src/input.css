@@ -150,6 +150,8 @@ code {
   @media (max-width: 701px) {
     background-color: red;
     flex-direction: column;
+    align-items: center;
+    height: auto;
   }
 }
 
