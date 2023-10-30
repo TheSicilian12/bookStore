@@ -65,9 +65,9 @@ code {
   position: relative;
   height: 150px;
   z-index: -1;
-  @media (max-width: 500px) {
+  /* @media (max-width: 500px) {
     transform: translateY(-385px);
-  }
+  } */
 }
 
 .info-container {
@@ -84,9 +84,9 @@ code {
   transition: 1.5s ease;
   transform: translateY(-170px);
   background: #333333;
-  @media (max-width: 701px) {
+  /* @media (max-width: 701px) {
     transform: translateY(-385px);
-  }
+  } */
 }
 
 .arrow-down {
@@ -152,11 +152,11 @@ code {
   display: flex;
   height: auto;
   background-color: #8b83837e;
-  @media (max-width: 500px) {
+  /* @media (max-width: 500px) {
     background-color: red;
     flex-direction: column;
     align-items: center;
-  }
+  } */
 }
 
 .image-container {
