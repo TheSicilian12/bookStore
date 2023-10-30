@@ -5,6 +5,7 @@ import './App.css';
 import './input.css';
 import logo from './Images/Logo/logo.png';
 import paperbackExchangeImage from './Images/graphics/paperbackExchange.png';
+import general from './Images/graphics/general.png';
 import carouselHeader from './Images/graphics/carouselHeader.png';
 import hoursAndLocation from './Images/graphics/hoursAndLocation.png';
 import book1 from './Images/bookCovers/book1.jpg';
@@ -166,7 +167,7 @@ function App() {
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex flex-col justify-center items-center w-screen mt-4`}>
-        <div className='text-5xl'>WHO WE ARE</div>
+        <img src={general} className='w-96' alt='Who We Are'/>
         <div className='about-details text-2xl'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
