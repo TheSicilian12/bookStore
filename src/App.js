@@ -157,22 +157,31 @@ function App() {
         onClick={toggleInfoDisplay}>
 
         <i
-          className={`fa fa-angle-down ${rotate} color-white flex justify-center text-4xl mr-5`}
+          className={`fa fa-angle-down ${rotate} color-white flex justify-center text-2xl mr-5`}
         ></i>
-        <div className='color-white text-4xl m-2'>Hours and Location</div>
+        <div className='color-white text-2xl m-2'>Hours and Location</div>
         <i
-          className={`fa fa-angle-down ${rotate} color-white flex justify-center text-4xl ml-5`}
+          className={`fa fa-angle-down ${rotate} color-white flex justify-center text-2xl ml-5`}
         ></i>
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex flex-col justify-center items-center w-screen mt-4`}>
-        <div>ABOUT</div>
+        <div className='text-4xl'>ABOUT</div>
+        <div className='about-details'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
 
-
-
-
-
-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+        </div>
       </div>
 
       <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 footer-color">
