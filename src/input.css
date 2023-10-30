@@ -89,6 +89,8 @@ code {
   } */
 }
 
+/* note: the transition is by pixel, may need to be a percentage for width differences */
+
 .arrow-down {
   transition-timing-function: ease-out;
   transition: 2s ease;
