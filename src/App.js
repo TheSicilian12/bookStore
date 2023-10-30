@@ -128,30 +128,25 @@ function App() {
         </div>
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-around background-info`}>
+      <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} flex justify-center background-info`}>
 
-        <div>
-          <div className="font-bold text-4xl">Hours</div>
-          <div>Monday & Tuesday: 11 AM - 5 PM</div>
-          <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-          <div> Saturday: 10 AM - 3:30 PM</div>
-          <div>Sunday: Closed</div>
-        </div>
-
-        <div>
-          <div className="font-bold text-4xl">Location</div>
-          <div>309 N Cole St Lima, OH 45805</div>
-        </div>
-
-        <div>
+        <div className='w-1/4 flex justify-center'>
           <div>
-            <div className="font-bold text-4xl">Contact</div>
-            <div>(567) 204-2718</div>
+            <div className="font-bold text-4xl">Hours</div>
+            <div>Monday & Tuesday: 11 AM - 5 PM</div>
+            <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+            <div> Saturday: 10 AM - 3:30 PM</div>
+            <div>Sunday: Closed</div>
           </div>
         </div>
 
-
-
+        <div className='w-1/4 flex justify-center'>
+          <div>
+            <div className="font-bold text-4xl">Visit</div>
+            <div>309 N Cole St Lima, OH 45805</div>
+            <div>(567) 204-2718</div>
+          </div>
+        </div>
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'arrow-up' : 'arrow-down'} arrow-box flex`}
@@ -160,28 +155,28 @@ function App() {
         <i
           className={`fa fa-angle-down ${rotate} color-white flex justify-center text-2xl mr-5`}
         ></i>
-        <div className='color-white text-2xl m-2'>Hours and Location</div>
+        <div className='color-white text-2xl m-2'>Our Info</div>
         <i
           className={`fa fa-angle-down ${rotate} color-white flex justify-center text-2xl ml-5`}
         ></i>
       </div>
 
       <div className={`${rotate === "rotate-down" ? 'general-up' : 'general-down'} flex flex-col justify-center items-center w-screen mt-4`}>
-        <img src={general} className='w-96' alt='Who We Are'/>
+        <img src={general} className='w-96' alt='Who We Are' />
         <div className='about-details text-2xl'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
         </div>
       </div>
 
