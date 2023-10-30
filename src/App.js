@@ -180,25 +180,24 @@ function App() {
         </div>
       </div>
 
-      <div className="w-screen flex justify-around border-solid border-t-2 mt-10 pt-5 pb-10 footer-color">
-        <div className="text-white">
-          <div className="font-bold text-4xl">Hours</div>
-          <div>Monday & Tuesday: 11 AM - 5 PM</div>
-          <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-          <div> Saturday: 10 AM - 3:30 PM</div>
-          <div>Sunday: Closed</div>
+      <div className="w-screen flex justify-center border-solid border-t-2 mt-40 pt-5 pb-10 footer-color">
+      <div className='w-1/4 flex justify-center text-white'>
+          <div>
+            <div className="font-bold text-4xl">Hours</div>
+            <div>Monday & Tuesday: 11 AM - 5 PM</div>
+            <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+            <div> Saturday: 10 AM - 3:30 PM</div>
+            <div>Sunday: Closed</div>
+          </div>
         </div>
 
-        <div className="text-white">
-          <div className="font-bold text-4xl">Location</div>
-          <div>309 N Cole St Lima, OH 45805</div>
+        <div className='w-1/4 flex justify-center text-white'>
+          <div>
+            <div className="font-bold text-4xl">Visit</div>
+            <div>309 N Cole St Lima, OH 45805</div>
+            <div>(567) 204-2718</div>
+          </div>
         </div>
-
-        <div className="text-white" v>
-          <div className="font-bold text-4xl">Contact</div>
-          <div>(567) 204-2718</div>
-        </div>
-
       </div>
     </div>
   );
