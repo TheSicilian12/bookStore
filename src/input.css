@@ -79,7 +79,6 @@ code {
 .arrow-up {
   transition-timing-function: ease-out;
   transition: 1.5s ease;
-  /* transform: translateY(-350%); */
   background: #333333;
 
   @media (width >= 1200px) {
