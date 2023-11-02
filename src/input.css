@@ -87,13 +87,13 @@ code {
 }
 
 .large-screen {
-  @media (max-width: 1066px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
 
 .mid-screen {
-  @media (min-width: 1065px) {
+  @media (min-width: 1199px) {
     display: none;
   }
 }
@@ -161,7 +161,7 @@ code {
   display: flex;
   height: auto;
   background-color: #8b83837e;
-  @media (max-width: 1065px) {
+  @media (max-width: 1199px) {
     flex-direction: column;
     align-items: center;
   }

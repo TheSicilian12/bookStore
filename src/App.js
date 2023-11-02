@@ -130,7 +130,7 @@ function App() {
 
       <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} justify-center background-info`}>
 
-        <div className='w-1/4 flex justify-center mt-4 mb-4 h-64'>
+        <div className='w-1/4 flex mt-4 mb-4'>
           <div className="large-screen">
             <div className="font-bold text-4xl">Hours</div>
             <div>Monday - Tuesday: 11 AM - 5 PM</div>
@@ -154,7 +154,7 @@ function App() {
 
 
 
-        <div className='w-1/4 flex justify-center mt-4 mb-4'>
+        <div className='w-1/4 flex mt-4 mb-4'>
           <div className="h-36">
             <div className="font-bold text-4xl">Visit</div>
             <div>309 N Cole St Lima, OH 45805</div>
