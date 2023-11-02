@@ -146,9 +146,6 @@ code {
   margin-right: 100px;
 }
 
-.backgroung-img {
-  height: 300px;
-}
 
 .carousel-box {
   width: 50%;
@@ -180,9 +177,13 @@ code {
   display: flex;
 }
 
-.backgroung-img {
+.background-img {
+  height: 300px;
   display: flex;
   z-index: 5;
+  @media(max-width: 901px) {
+    height: 450px;
+  }
 }
 
 .background-text-container {
@@ -194,6 +195,9 @@ code {
   z-index: 10;
   height: 300px;
   border: 1px solid black;
+  @media(max-width: 901px) {
+    height: 450px;
+  }
 }
 
 .background-image-text {

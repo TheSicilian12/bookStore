@@ -118,7 +118,7 @@ function App() {
       </div>
 
       <div className="image-container">
-        <img className="w-screen backgroung-img"
+        <img className="w-screen background-img"
           src={background} alt="background"
         ></img>
         <div className='background-text-container'>
