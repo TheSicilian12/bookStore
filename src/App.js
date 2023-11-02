@@ -150,6 +150,24 @@ function App() {
             <div>Sunday:</div>
             <div>Closed</div>
           </div>
+
+          <div className="small-screen">
+            <div className="font-bold text-4xl">Hours</div>
+            <div>Monday:</div>
+            <div>11 AM - 5 PM</div>
+            <div>Tuesday:</div>
+            <div>11 AM - 5 PM</div>
+            <div>Wednesday - Friday:</div>
+            <div>11 AM - 3:30 PM</div>
+            <div>Thursday:</div>
+            <div>11 AM - 3:30 PM</div>
+            <div>Friday:</div>
+            <div>11 AM - 3:30 PM</div>
+            <div>Saturday:</div>
+            <div>10 AM - 3:30 PM</div>
+            <div>Sunday:</div>
+            <div>Closed</div>
+          </div>
         </div>
 
 

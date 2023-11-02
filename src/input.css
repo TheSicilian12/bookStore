@@ -96,6 +96,15 @@ code {
   @media (min-width: 1199px) {
     display: none;
   }
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.small-screen {
+  @media(min-width: 901px) {
+    display: none;
+  }
 }
 
 .arrow-down {
