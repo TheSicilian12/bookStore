@@ -167,16 +167,39 @@ code {
   transform: translateY(0%);
 }
 
+.logo-box-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (width <= 600px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .logo-box {
   height: 200px;
   width: 500px;
   margin-left: 50px;
+
+  @media (width <= 600px) {
+    margin-left: 0px;
+    width: 300px;
+  }
 }
 
 .paperbackExchange-box {
   height: 200px;
   width: 200px;
   margin-right: 100px;
+
+  @media (width <= 600px) {
+    margin-right: 0px;
+    height: 170px;
+    width: 170px;
+  }
 }
 
 .carousel-box {

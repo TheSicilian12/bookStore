@@ -108,10 +108,10 @@ function App() {
 
   return (
     <div className="w-screen">
-      <div className="flex justify-between mb-5 logo-container">
-        {/* <img src={logo}
+      <div className="logo-box-container">
+        <img src={logo}
           alt={"Jan's Family Book Store"}
-          className="logo-box" /> */}
+          className="logo-box" />
         <img src={paperbackExchangeImage}
           alt={"Paperback Exchange"}
           className="paperbackExchange-box" />
