@@ -130,18 +130,32 @@ function App() {
 
       <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} justify-center background-info`}>
 
-        <div className='w-1/4 flex justify-center mt-4 mb-4'>
-          <div>
+        <div className='w-1/4 flex justify-center mt-4 mb-4 h-64'>
+          <div className="large-screen">
             <div className="font-bold text-4xl">Hours</div>
-            <div>Monday & Tuesday: 11 AM - 5 PM</div>
+            <div>Monday - Tuesday: 11 AM - 5 PM</div>
             <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-            <div> Saturday: 10 AM - 3:30 PM</div>
+            <div>Saturday: 10 AM - 3:30 PM</div>
             <div>Sunday: Closed</div>
+          </div>
+
+          <div className="mid-screen">
+            <div className="font-bold text-4xl">Hours</div>
+            <div>Monday - Tuesday:</div>
+            <div>11 AM - 5 PM</div>
+            <div>Wednesday - Friday:</div>
+            <div>11 AM - 3:30 PM</div>
+            <div>Saturday:</div>
+            <div>10 AM - 3:30 PM</div>
+            <div>Sunday:</div>
+            <div>Closed</div>
           </div>
         </div>
 
+
+
         <div className='w-1/4 flex justify-center mt-4 mb-4'>
-          <div>
+          <div className="h-36">
             <div className="font-bold text-4xl">Visit</div>
             <div>309 N Cole St Lima, OH 45805</div>
             <div>(567) 204-2718</div>
@@ -181,7 +195,7 @@ function App() {
       </div>
 
       <div className="w-screen flex justify-center border-solid border-t-2 mt-40 pt-5 pb-10 footer-color">
-      <div className='w-1/4 flex justify-center text-white'>
+        <div className='w-1/4 flex justify-center text-white'>
           <div>
             <div className="font-bold text-4xl">Hours</div>
             <div>Monday & Tuesday: 11 AM - 5 PM</div>

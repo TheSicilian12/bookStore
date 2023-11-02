@@ -86,7 +86,17 @@ code {
   }
 }
 
-/* note: the transition is by pixel, may need to be a percentage for width differences */
+.large-screen {
+  @media (max-width: 1066px) {
+    display: none;
+  }
+}
+
+.mid-screen {
+  @media (min-width: 1065px) {
+    display: none;
+  }
+}
 
 .arrow-down {
   transition-timing-function: ease-out;
