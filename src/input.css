@@ -102,6 +102,10 @@ code {
   @media (width < 900px) {
     transform: translateY(-1200%);
   }
+
+  @media (width < 475px) {
+    transform: translateY(-1400%);
+  }
 }
 
 .large-screen {
