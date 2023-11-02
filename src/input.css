@@ -30,6 +30,13 @@ code {
   }
 }
 
+.logo-container {
+  @media (width < 900px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .transition-show-info {
   max-height: 1000px; /* Adjust this value as needed */
   transition: max-height 0s ease-in-out;
@@ -233,6 +240,10 @@ code {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @media (width <= 819px) {
+    font-size: 80px;
+  }
 }
 
 .about-details {

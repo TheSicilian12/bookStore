@@ -108,7 +108,7 @@ function App() {
 
   return (
     <div className="w-screen">
-      <div className="flex justify-between mb-5">
+      <div className="flex justify-between mb-5 logo-container">
         <img src={logo}
           alt={"Jan's Family Book Store"}
           className="logo-box" />
