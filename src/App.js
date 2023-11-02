@@ -157,7 +157,7 @@ function App() {
             <div>11 AM - 5 PM</div>
             <div>Tuesday:</div>
             <div>11 AM - 5 PM</div>
-            <div>Wednesday - Friday:</div>
+            <div>Wednesday:</div>
             <div>11 AM - 3:30 PM</div>
             <div>Thursday:</div>
             <div>11 AM - 3:30 PM</div>
