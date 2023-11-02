@@ -79,10 +79,19 @@ code {
 .arrow-up {
   transition-timing-function: ease-out;
   transition: 1.5s ease;
-  transform: translateY(-350%);
+  /* transform: translateY(-350%); */
   background: #333333;
-  @media (max-width: 1065px) {
-    transform: translateY(-650%);
+
+  @media (width >= 1200px) {
+    transform: translateY(-370%);
+  }
+
+  @media (900px <= width <= 1199px) {
+    transform: translateY(-910%);
+  }
+
+  @media (width < 900px) {
+    transform: translateY(-1200%);
   }
 }
 
@@ -126,7 +135,20 @@ code {
 
 .general-up {
   transition: 1.5s ease;
-  transform: translateY(-170px);
+  /* transform: translateY(-170px); */
+
+  @media (width >= 1200px) {
+    transform: translateY(-170px);
+  }
+
+  @media (900px <= width <= 1199px) {
+    transform: translateY(-440px);
+  }
+
+  @media (width < 900px) {
+    transform: translateY(-580px);
+  }
+
 }
 
 .general-down {
