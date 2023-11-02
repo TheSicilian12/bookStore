@@ -65,6 +65,8 @@ code {
   position: relative;
   height: 150px;
   z-index: -1;
+  background-color: antiquewhite;
+  color: antiquewhite;
 }
 
 .info-container {
@@ -74,6 +76,7 @@ code {
   position: relative;
   z-index: -1;
   height: 160px;
+  background-color: #8b83837e;
 }
 
 .arrow-up {
@@ -184,7 +187,6 @@ code {
 .background-info {
   display: flex;
   height: auto;
-  background-color: #8b83837e;
   @media (max-width: 1199px) {
     flex-direction: column;
     align-items: center;

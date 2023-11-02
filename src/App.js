@@ -128,7 +128,7 @@ function App() {
         </div>
       </div>
 
-      <div className={`${rotate === "rotate-down" ? 'info-small-container' : 'info-container'} justify-center background-info`}>
+      <div className={`${rotate === "rotate-down" ? 'info-small-container background-antiqueWhite' : 'info-container background-gray'} justify-center background-info background-gray`}>
 
         <div className='w-1/4 flex mt-4 mb-4'>
           <div className="large-screen">
