@@ -135,7 +135,6 @@ code {
 
 .general-up {
   transition: 1.5s ease;
-  /* transform: translateY(-170px); */
 
   @media (width >= 1200px) {
     transform: translateY(-170px);
@@ -148,7 +147,6 @@ code {
   @media (width < 900px) {
     transform: translateY(-580px);
   }
-
 }
 
 .general-down {
@@ -167,7 +165,6 @@ code {
   width: 200px;
   margin-right: 100px;
 }
-
 
 .carousel-box {
   width: 50%;
