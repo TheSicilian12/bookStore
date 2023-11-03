@@ -97,15 +97,15 @@ code {
   }
 
   @media (900px <= width <= 1199px) {
-    transform: translateY(-910%);
+    transform: translateY(-710%);
   }
 
   @media (width < 900px) {
-    transform: translateY(-1200%);
+    transform: translateY(-710%);
   }
 
   @media (width < 475px) {
-    transform: translateY(-1400%);
+    transform: translateY(-710%);
   }
 }
 
@@ -156,11 +156,11 @@ code {
   }
 
   @media (900px <= width <= 1199px) {
-    transform: translateY(-440px);
+    transform: translateY(-310px);
   }
 
   @media (width < 900px) {
-    transform: translateY(-580px);
+    transform: translateY(-310px);
   }
 }
 
