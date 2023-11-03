@@ -229,7 +229,7 @@ code {
   display: flex;
   height: auto;
   @media (max-width: 1199px) {
-    /* flex-direction: column; */
+    flex-direction: column;
     /* align-items: center; */
   }
 }
