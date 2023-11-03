@@ -84,12 +84,10 @@ code {
   z-index: -1;
   height: 160px;
   background-color: #8b83837e;
-  border: 1px solid red;
 }
 
 .width-adjust {
   width: 100%;
-  border: 2px solid black;
 }
 
 .arrow-up {
@@ -130,7 +128,6 @@ code {
 }
 
 .small-screen {
-  border: 1px solid black;
   @media(min-width: 901px) {
     display: none;
   }
@@ -255,7 +252,6 @@ code {
   width: 100%;
   z-index: 10;
   height: 300px;
-  border: 1px solid black;
   @media(max-width: 901px) {
     height: 450px;
   }

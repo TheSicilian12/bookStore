@@ -139,7 +139,7 @@ function App() {
               <div>Saturday: </div>
               <div>Sunday: </div>
             </div>
-            <div className="flex flex-col text-right ml-5">
+            <div className="flex flex-col text-left ml-5">
               <div>11 AM - 5 PM</div>
               <div>11 AM - 3:30 PM</div>
               <div>10 AM - 3:30 PM</div>
@@ -148,9 +148,9 @@ function App() {
           </div>
         </div>
 
-        <div className='flex mt-4 mb-4 width-adjust align-top justify-center'>
+        <div className='flex flex-col mt-4 width-adjust align-top align-center items-center justify-center'>
+          <div className="font-bold text-4xl">Visit</div>
           <div className="h-36 flex flex-col text-center">
-            <div className="font-bold text-4xl w-40">Visit</div>
             <div>309 N Cole St Lima, OH 45805</div>
             <div>(567) 204-2718</div>
           </div>
