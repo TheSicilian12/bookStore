@@ -87,6 +87,11 @@ code {
   border: 1px solid red;
 }
 
+.width-adjust {
+  width: 100%;
+  border: 1px solid black;
+}
+
 .arrow-up {
   transition-timing-function: ease-out;
   transition: 1.5s ease;
@@ -224,8 +229,8 @@ code {
   display: flex;
   height: auto;
   @media (max-width: 1199px) {
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
   }
 }
 
