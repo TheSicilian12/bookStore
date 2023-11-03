@@ -189,18 +189,26 @@ function App() {
       </div>
 
       <div className="w-screen footer-container">
-        <div className='flex text-white'>
-          <div className='m-10'>
-            <div className="font-bold text-4xl">Hours</div>
-            <div>Monday & Tuesday: 11 AM - 5 PM</div>
-            <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-            <div> Saturday: 10 AM - 3:30 PM</div>
-            <div>Sunday: Closed</div>
+        <div className='flex flex-col text-center align-top text-white mt-5 mb-10'>
+          <div className="font-bold text-4xl">Hours</div>
+          <div className="flex text-center justify-center">
+            <div className="flex flex-col text-left">
+              <div>Monday - Tuesday: </div>
+              <div>Wednesday - Friday: </div>
+              <div>Saturday: </div>
+              <div>Sunday: </div>
+            </div>
+            <div className="flex flex-col text-left ml-5">
+              <div>11 AM - 5 PM</div>
+              <div>11 AM - 3:30 PM</div>
+              <div>10 AM - 3:30 PM</div>
+              <div>Closed</div>
+            </div>
           </div>
         </div>
 
-        <div className='flex text-white w-1/2'>
-          <div className='m-10'>
+        <div className='flex flex-col justify-start text-center text-white w-1/2 mt-5 mb-10'>
+          <div className=''>
             <div className="font-bold text-4xl">Visit</div>
             <div>309 N Cole St Lima, OH 45805</div>
             <div>(567) 204-2718</div>
@@ -212,6 +220,35 @@ function App() {
 }
 
 export default App;
+
+
+{/* <div className='flex flex-col mt-4 mb-4 width-adjust justify-center item-center align-middle text-center'>
+<div className="font-bold text-4xl">Hours</div>
+<div className="flex text-center justify-center">
+  <div className="flex flex-col text-left">
+    <div>Monday - Tuesday: </div>
+    <div>Wednesday - Friday: </div>
+    <div>Saturday: </div>
+    <div>Sunday: </div>
+  </div>
+  <div className="flex flex-col text-left ml-5">
+    <div>11 AM - 5 PM</div>
+    <div>11 AM - 3:30 PM</div>
+    <div>10 AM - 3:30 PM</div>
+    <div>Closed</div>
+  </div>
+</div>
+</div>
+
+<div className='flex flex-col mt-4 width-adjust align-top align-center items-center justify-center'>
+<div className="font-bold text-4xl">Visit</div>
+<div className="h-36 flex flex-col text-center">
+  <div>309 N Cole St Lima, OH 45805</div>
+  <div>(567) 204-2718</div>
+</div>
+</div>
+</div> */}
+
 
 {/* <div className="large-screen">
             <div className="font-bold text-4xl">Hours</div>
