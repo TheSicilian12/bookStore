@@ -130,18 +130,26 @@ function App() {
 
       <div className={`${rotate === "rotate-down" ? 'info-small-container background-antiqueWhite' : 'info-container background-gray'} flex background-info background-gray align-top`}>
 
-        <div className='flex mt-4 mb-4 width-adjust justify-center'>
-          <div className="w-1/2 flex flex-col text-center">
-            <div className="font-bold text-4xl">Hours</div>
-            <div>Monday - Tuesday: 11 AM - 5 PM</div>
-            <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
-            <div>Saturday: 10 AM - 3:30 PM</div>
-            <div>Sunday: Closed</div>
+        <div className='flex flex-col mt-4 mb-4 width-adjust justify-center item-center align-middle text-center'>
+          <div className="font-bold text-4xl">Hours</div>
+          <div className="flex text-center justify-center">
+            <div className="flex flex-col text-left">
+              <div>Monday - Tuesday: </div>
+              <div>Wednesday - Friday: </div>
+              <div>Saturday: </div>
+              <div>Sunday: </div>
+            </div>
+            <div className="flex flex-col text-right ml-5">
+              <div>11 AM - 5 PM</div>
+              <div>11 AM - 3:30 PM</div>
+              <div>10 AM - 3:30 PM</div>
+              <div>Closed</div>
+            </div>
           </div>
         </div>
 
         <div className='flex mt-4 mb-4 width-adjust align-top justify-center'>
-          <div className="h-36 flex flex-col text-center w-1/2">
+          <div className="h-36 flex flex-col text-center">
             <div className="font-bold text-4xl w-40">Visit</div>
             <div>309 N Cole St Lima, OH 45805</div>
             <div>(567) 204-2718</div>
@@ -213,7 +221,7 @@ export default App;
             <div>Sunday: Closed</div>
           </div> */}
 
-          {/* <div className="mid-screen">
+{/* <div className="mid-screen">
             <div className="font-bold text-4xl">Hours</div>
             <div>Monday - Tuesday:</div>
             <div>11 AM - 5 PM</div>
@@ -225,7 +233,7 @@ export default App;
             <div>Closed</div>
           </div> */}
 
-          {/* <div className="small-screen">
+{/* <div className="small-screen">
             <div className="font-bold text-4xl w-auto">Hours</div>
             <div>Monday</div>
             <div>11 AM - 5 PM</div>
