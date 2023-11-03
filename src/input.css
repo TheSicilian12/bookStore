@@ -96,19 +96,19 @@ code {
   background: #333333;
 
   @media (width >= 1200px) {
-    transform: translateY(-410%);
+    transform: translateY(-450%);
   }
 
   @media (900px <= width <= 1199px) {
-    transform: translateY(-755%);
+    transform: translateY(-790%);
   }
 
   @media (width < 900px) {
-    transform: translateY(-755%);
+    transform: translateY(-790%);
   }
 
   @media (width < 475px) {
-    transform: translateY(-755%);
+    transform: translateY(-790%);
   }
 }
 
