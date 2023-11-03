@@ -130,16 +130,16 @@ function App() {
 
       <div className={`${rotate === "rotate-down" ? 'info-small-container background-antiqueWhite' : 'info-container background-gray'} justify-center background-info background-gray`}>
 
-        <div className='w-1/4 flex mt-4 mb-4'>
-          <div className="large-screen">
+        <div className='flex mt-4 mb-4'>
+          {/* <div className="large-screen">
             <div className="font-bold text-4xl">Hours</div>
             <div>Monday - Tuesday: 11 AM - 5 PM</div>
             <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
             <div>Saturday: 10 AM - 3:30 PM</div>
             <div>Sunday: Closed</div>
-          </div>
+          </div> */}
 
-          <div className="mid-screen">
+          {/* <div className="mid-screen">
             <div className="font-bold text-4xl">Hours</div>
             <div>Monday - Tuesday:</div>
             <div>11 AM - 5 PM</div>
@@ -149,11 +149,11 @@ function App() {
             <div>10 AM - 3:30 PM</div>
             <div>Sunday:</div>
             <div>Closed</div>
-          </div>
+          </div> */}
 
-          <div className="small-screen">
-            <div className="font-bold text-4xl">Hours</div>
-            <div>Monday:</div>
+          {/* <div className="small-screen">
+            <div className="font-bold text-4xl w-auto">Hours</div>
+            <div>Monday</div>
             <div>11 AM - 5 PM</div>
             <div>Tuesday:</div>
             <div>11 AM - 5 PM</div>
@@ -167,12 +167,18 @@ function App() {
             <div>10 AM - 3:30 PM</div>
             <div>Sunday:</div>
             <div>Closed</div>
+          </div> */}
+
+          <div>
+            <div className="font-bold text-4xl">Hours</div>
+            <div>Monday - Tuesday: 11 AM - 5 PM</div>
+            <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
+            <div>Saturday: 10 AM - 3:30 PM</div>
+            <div>Sunday: Closed</div>
           </div>
         </div>
 
-
-
-        <div className='w-1/4 flex mt-4 mb-4'>
+        <div className='flex mt-4 mb-4'>
           <div className="h-36">
             <div className="font-bold text-4xl">Visit</div>
             <div>309 N Cole St Lima, OH 45805</div>
@@ -212,9 +218,9 @@ function App() {
         </div>
       </div>
 
-      <div className="w-screen flex justify-center border-solid border-t-2 mt-40 pt-5 pb-10 footer-color">
-        <div className='w-1/4 flex justify-center text-white'>
-          <div>
+      <div className="w-screen footer-container">
+        <div className='flex justify-center text-white'>
+          <div className='m-10'>
             <div className="font-bold text-4xl">Hours</div>
             <div>Monday & Tuesday: 11 AM - 5 PM</div>
             <div>Wednesday - Friday: 11 AM - 3:30 PM</div>
@@ -223,8 +229,8 @@ function App() {
           </div>
         </div>
 
-        <div className='w-1/4 flex justify-center text-white'>
-          <div>
+        <div className='flex justify-center text-white'>
+          <div className='m-10'>
             <div className="font-bold text-4xl">Visit</div>
             <div>309 N Cole St Lima, OH 45805</div>
             <div>(567) 204-2718</div>
