@@ -158,11 +158,11 @@ code {
   }
 
   @media (900px <= width <= 1199px) {
-    transform: translateY(-310px);
+    transform: translateY(-350px);
   }
 
   @media (width < 900px) {
-    transform: translateY(-310px);
+    transform: translateY(-350px);
   }
 }
 
