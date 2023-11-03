@@ -130,7 +130,7 @@ function App() {
 
       <div className={`${rotate === "rotate-down" ? 'info-small-container background-antiqueWhite' : 'info-container background-gray'} justify-center background-info background-gray`}>
 
-        <div className='flex mt-4 mb-4'>
+        <div className='flex mt-4 mb-4 w-1/2'>
           {/* <div className="large-screen">
             <div className="font-bold text-4xl">Hours</div>
             <div>Monday - Tuesday: 11 AM - 5 PM</div>
@@ -178,7 +178,7 @@ function App() {
           </div>
         </div>
 
-        <div className='flex mt-4 mb-4'>
+        <div className='flex mt-4 mb-4 w-1/2'>
           <div className="h-36">
             <div className="font-bold text-4xl">Visit</div>
             <div>309 N Cole St Lima, OH 45805</div>
@@ -219,7 +219,7 @@ function App() {
       </div>
 
       <div className="w-screen footer-container">
-        <div className='flex justify-center text-white'>
+        <div className='flex justify-center text-white w-1/2'>
           <div className='m-10'>
             <div className="font-bold text-4xl">Hours</div>
             <div>Monday & Tuesday: 11 AM - 5 PM</div>
@@ -229,7 +229,7 @@ function App() {
           </div>
         </div>
 
-        <div className='flex justify-center text-white'>
+        <div className='flex justify-center text-white w-1/2'>
           <div className='m-10'>
             <div className="font-bold text-4xl">Visit</div>
             <div>309 N Cole St Lima, OH 45805</div>
